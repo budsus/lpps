@@ -34,5 +34,6 @@ App::uses('Controller', 'Controller');
 class AppController extends Controller {
 
     public $components = array('DebugKit.Toolbar');
-    //var $helpers = array('Facebook.Facebook');
+    var $helpers = array('Facebook.Facebook');
+    //var $components = array('Twitter.Twitter');
 }

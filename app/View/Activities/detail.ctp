@@ -14,13 +14,21 @@
 <h1>Biaya Pendaftaran</h1>
 <?php echo h($post['Activity']['biaya_pendaftaran']); ?> <br /><br />
 <?php
-$this->Facebook->share($this->Html->link(
-    '/activities/detail/%s','id'));
+$this->Facebook->share(
+    'http://www.google.com');
 //array('controller' => 'activities', 'action' => 'detail', $activity['Activity']['id'])));
 ?>
 
+<a href="#"
+   onclick="
+    window.open(
+      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+      'facebook-share-dialog',
+      'width=626,height=436');
+    return false;">
+    Share on Facebook
+</a ><br /> <br/>
+
 <?php
-//$namabrosur = h(['Activity']['brosur']);
-//$id = ['Activity']['id'];
-//$html->link('Pdf', '/files/activity/brosur/%s/%s',$id,$namabrosur);
+echo $this->Html->link('download brosur',array('action' => 'download', $post['Activity']['id']));
 ?>
