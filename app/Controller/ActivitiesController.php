@@ -98,30 +98,8 @@ class ActivitiesController extends AppController{
         );
         pr($params['path']);
         $this->set($params);
-
-        //header('Content-type: '.$file['Activity']['filetype']);
-        //header('Content-length: '.$file['Activity']['filesize']);
-        //header('Content-Disposition: attachment; filename="'.$file['Activity']['brosur'].'"');
-
-        //echo $file['File']['data'];
-
-        //exit();
     }
 
-    /*public function sendFile($id) {
-        $file = $this->Activity->find('first', array(
-            'conditions' => array(
-                'Activity.id' => $id
-            )
-        ));
-        //$file = $this->Attachment->getFile($data['brosur']);
-        $this->response->file($file['brosur_dir'], array(
-            'download' => true//,
-            //'name' => 'the name of the file as it should appear on the client\'s computer',
-        ));
-        //Return reponse object to prevent controller from trying to render a view
-        return $this->response;
-    }*/
 
     function connect() {
         $this->Twitter->setupApp('YOUR_CONSUMER_KEY', 'YOUR_CONSUMER_SECRET');
