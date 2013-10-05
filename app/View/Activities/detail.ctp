@@ -15,8 +15,12 @@
 <?php echo h($post['Activity']['biaya_pendaftaran']); ?> <br /><br />
 <a href="<?php echo $this->Html->url(
     array('controller' => 'Participants',
+        'action'=>'participantList',
+        $post['Activity']['id'])); ?>"><button>Lihat Peserta</button></a>
+<a href="<?php echo $this->Html->url(
+    array('controller' => 'Participants',
         'action'=>'add',
-        $post['Activity']['id'])); ?>"><button>Daftar Sebagai Peserta</button></a>
+        $post['Activity']['id'])); ?>"><button>Daftar Sebagai Peserta</button></a><br /><br />
 <?php
 $this->Facebook->share(
     'http://www.google.com');
