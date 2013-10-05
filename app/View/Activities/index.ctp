@@ -1,6 +1,10 @@
 <h2>Informasi Kegiatan</h2>
 
 <p>Halaman ini memuat daftar kegiatan yang diselenggarakan oleh LPPS</p>
+<a href="<?php echo $this->Html->url('/activities/add'); ?>"
+   class="btn">
+    Tambah Kegiatan
+</a>
 <table>
     <tr>
         <th>Nama Kegiatan</th>

@@ -13,6 +13,10 @@
 <?php echo h($post['Activity']['penanggung_jawab']); ?> <br /><br />
 <h1>Biaya Pendaftaran</h1>
 <?php echo h($post['Activity']['biaya_pendaftaran']); ?> <br /><br />
+<a href="<?php echo $this->Html->url(
+    array('controller' => 'Participants',
+        'action'=>'add',
+        $post['Activity']['id'])); ?>"><button>Daftar Sebagai Peserta</button></a>
 <?php
 $this->Facebook->share(
     'http://www.google.com');

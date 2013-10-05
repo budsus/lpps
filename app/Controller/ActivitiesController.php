@@ -2,6 +2,8 @@
 
 class ActivitiesController extends AppController{
 
+    //var $components = array('Twitter.Twitter');
+
     public function index(){
         $activities = $this->Activity->find('all');
         //pr($activities);
@@ -12,7 +14,20 @@ class ActivitiesController extends AppController{
     public function add(){
         if($this->request->is('post')){
             $this->Activity->save($this->request->data);
-            $this->redirect('/activities');
+            ?>
+            <script type="text/javascript">FB.getLoginStatus(function(response) {
+                    if (response.status === 'connected') {
+                        FB.api('/me/feed', 'post', { message: body }, function(response) {
+                            if (!response || response.error) {
+                                document.write("<p>success</p>");
+                            }
+                            else{
+                                document.write("<p>fail</p>");
+                            }
+                        });
+                    }
+                });</script>
+            <?php $this->redirect('/activities');
         }
     }
 
@@ -121,7 +136,8 @@ class ActivitiesController extends AppController{
             'oauthTokenSecret' => $oauth_token_secret,
         ));
     $this->updateStatus('Some message you want to tweet');
-    }*/
+}*/
+
 }
 
 ?>
