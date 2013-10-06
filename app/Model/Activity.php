@@ -1,6 +1,11 @@
 <?php
 
 class Activity extends AppModel{
+
+    public $hasMany = array(
+        'Participant'
+    );
+
     public $validate = array(
         'nama_kegiatan' => array(
             'rule' => 'notEmpty',
@@ -20,6 +25,6 @@ class Activity extends AppModel{
             )
         )
     );
-    public $helpers = array('Facebook.Facebook');
+    public $helpers = array('Facebook.Facebook', 'Twitter.Twitter');
 }
 ?>
