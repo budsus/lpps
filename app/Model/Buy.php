@@ -1,6 +1,6 @@
 <?php
 class Buy extends AppModel {
-    public $displayField='nama';
+    public $displayField='judul';
 
     public $belongsTo = array('Book');
 }

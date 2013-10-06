@@ -1,6 +1,6 @@
 <?php
 class Book extends AppModel {
-    public $displayField='nama';
+    public $displayField='judul';
 
     public $hasMany = array('Buy');
 }

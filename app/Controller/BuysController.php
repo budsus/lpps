@@ -13,6 +13,7 @@ class  BuysController extends AppController {
 
    function index() {
         $data = $this->paginate('Buy');
+        //$data = $this->Buy->Book->findById($id);
         $this->set('data', $data);
         $this->set('judul', 'Daftar Pembeli Buku');
 
@@ -23,16 +24,18 @@ class  BuysController extends AppController {
         }*/
 
         //$posts = $this->paginate(); 
+
     }
 
-    function beli(){
-        $books = $this->Buy->Book->findById($id);
-        $this->set('judul', 'Tambah Pembeli');
+    function beli($id = null){
+        $data = $this->Buy->Book->findById($id);
+        $this->set('data', $data);
+        $this->Buy->Book->find("list");
+        $this->set('judul', 'Pesan Buku');
         if($this->request->is('post')){
             $this->Buy->create();
             $this->Buy->save($this->request->data);
-            $this->redirect('/Buys');
-
+            $this->redirect('/Books');
         }
     }
 
