@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 05, 2013 at 10:03 AM
+-- Generation Time: Oct 06, 2013 at 05:57 PM
 -- Server version: 5.5.32
 -- PHP Version: 5.4.16
 
@@ -78,19 +78,19 @@ INSERT INTO `bulletins` (`id`, `judul`, `keterangan`, `harga`, `created`, `modif
 
 CREATE TABLE IF NOT EXISTS `buys` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `book_id` varchar(255) DEFAULT NULL,
-  `judul` varchar(255) DEFAULT NULL,
+  `book_id` varchar(15) NOT NULL,
+  `nama` varchar(255) DEFAULT NULL,
   `notelp` varchar(255) DEFAULT NULL,
   `keterangantambahan` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
 
 --
 -- Dumping data for table `buys`
 --
 
-INSERT INTO `buys` (`id`, `book_id`, `judul`, `notelp`, `keterangantambahan`) VALUES
-(1, 'yose', NULL, '000', '10 biji');
+INSERT INTO `buys` (`id`, `book_id`, `nama`, `notelp`, `keterangantambahan`) VALUES
+(7, '', 'Carlo', '1245', '1 buah');
 
 -- --------------------------------------------------------
 
