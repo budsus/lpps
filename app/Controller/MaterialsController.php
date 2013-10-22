@@ -3,6 +3,7 @@ class MaterialsController extends AppController{
 	var $name = "Materials";
     public $layout = "utama";
 	public $uses= 'Material';
+    var $components = array('Session');
 	var $paginate = array(
                         'limit' => 25,
                         'order' => array(
@@ -60,7 +61,7 @@ class MaterialsController extends AppController{
     function simpan() {
         if (!empty($this->data)) {
             if ($this->Material->save($this->data)){
-                $this->Session->setFlash('Ubah detail material berhasil', 'default', array('class' => 'success'));
+                $this->Session->setFlash('Ubah detail material berhasil');
             }
             $this->redirect(array('action'=>'index'));
         }

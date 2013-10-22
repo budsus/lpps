@@ -52,6 +52,14 @@
                             <li>
                                 <a href="<?php echo $this->Html->url(
                                     array('controller' => 'Facilities',
+                                        'action'=>'upload',
+                                        $nomorid)); ?>" >
+                                    Tambah Foto
+                                </a>
+                            </li>
+                            <li>
+                                <a href="<?php echo $this->Html->url(
+                                    array('controller' => 'Facilities',
                                         'action'=>'lihat',
                                         $nomorid)); ?>">
                                     Lihat Foto

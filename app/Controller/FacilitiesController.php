@@ -5,8 +5,8 @@ class FacilitiesController extends AppController{
     var $uses = array('Facility','Galery');
     public $name = "Facilities";
     public $layout = "utama";
-
-    var $components = array('RequestHandler');
+    var $components = array('Session');
+   // var $components = array('RequestHandler');
     public function index(){
         $data = $this->paginate('Facility');
         $this->set('data', $data);
@@ -50,20 +50,25 @@ class FacilitiesController extends AppController{
 
     }
 
-    public function upload(){
+    public function upload($id=null){
         $total=$this->Facility->find('count');
-        if($total==0){
+        /*if($total==0){
             $this->Session->setFlash("Belum ada data fasilitas, harap tambah terlebih dahulu");
             $this->redirect(array('action'=>'tambah'));
-        }
+        }*/
         $facilities =$this->Galery->Facility->find('list');
-
-        $this->set('facilities',$facilities);
+        $datafasilitas = $this->Facility->find('first', array(
+            'conditions' => array(
+                'Facility.id' => $id
+            )
+        ));
+        $this->set('facilities',$datafasilitas);
         $this->set('judul', 'Manajemen fasilitas');
         if($this->request->is('post')){
-
+       // pr($this->request->data);
             $this->Galery->save($this->request->data);
             $this->Session->setFlash("Penambahan foto berhasil");
+            $this->redirect(array('controller'=>'facilities', 'action'=>'index'));
         }
     }
 
@@ -90,7 +95,7 @@ class FacilitiesController extends AppController{
         if ($facilityID != null) {
             if ($this->Facility->delete($facilityID)) {
                 $this->Session->setFlash(
-                    "Data Fasilitas " . $facilityID + " telah terhapus",
+                    "Data Fasilitas telah terhapus",
                     "default",
                     array("class"=>"success")
                 );
@@ -121,6 +126,19 @@ class FacilitiesController extends AppController{
         $this->set($params);
         $this->autoLayout = false;
 
+    }
+
+    function lihat($id){
+        $this->set('judul', 'Daftar foto fasilitas');
+        $fasilitas=$this->Facility->findById($id);
+        $fotoFasilitas = $this->Galery->find('all', array(
+            'conditions' => array(
+                'facility_id' => $id
+            )
+        ));
+        $this->set('fasilitas',$fasilitas);
+        $this->set('fotoFasilitas',$fotoFasilitas);
+        //pr(count($fotoFasilitas));
     }
 
 

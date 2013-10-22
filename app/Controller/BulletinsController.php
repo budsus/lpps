@@ -3,6 +3,7 @@ class BulletinsController extends AppController{
 	var $name = "Bulletins";
     public $layout = "utama";
 	public $uses = 'Bulletin';
+    var $components = array('Session');
     var $paginate = array(
                         'limit' => 25,
                         'order' => array(

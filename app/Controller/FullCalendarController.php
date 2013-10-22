@@ -10,10 +10,12 @@
  * http://www.opensource.org/licenses/mit-license.php
  */
  
-class FullCalendarController extends FullCalendarAppController {
+class FullCalendarController extends AppController {
+    var $components = array('Session');
+    var $helpers = array('Html', 'Form', 'Session', 'Js'=>array('Jquery'));
     var $uses = array('Facility','Galery');
 	var $name = 'FullCalendar';
-    var $layout='utama';
+    var $layout='kalendar';
 	function index() {
         $this->set('judul','Pemesanan Fasilitas');
         $total=$this->Facility->find('count');

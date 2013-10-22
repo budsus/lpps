@@ -30,7 +30,7 @@ class Galery extends AppModel{
     public $actsAs = array(
         'Upload.Upload' => array(
             'photo' => array(
-                //'path' => '{ROOT}webroot{DS}files{DS}{model}{DS}{field}{DS}',
+                'path' => '{ROOT}webroot{DS}files{DS}{model}{DS}{field}{DS}',
                 'fields' => array(
                     'dir' => 'photo_dir'
                 )
@@ -45,7 +45,7 @@ class Galery extends AppModel{
                 'message'=>'File harus terisi'
             ),
             'fileRule2'=>array(
-                'rule' => array('isValidMimeType', array('image/jpg', 'image/png'), ),
+                'rule' => array('isValidMimeType', array('image/jpg', 'image/png','image/jpeg'), ),
                 'message' => 'Format file harus berupa jpg atau png'
             )
 

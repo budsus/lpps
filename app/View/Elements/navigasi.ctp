@@ -4,9 +4,15 @@
     </div>
     <div class="large-9 columns">
         <ul class="inline-list right">
-            <li><a href="#">Section 1</a></li>
-            <li><a href="#">Section 2</a></li>
-            <li><a href="#">Section 3</a></li>
+            <li><a href="<?php echo $this->Html->url(
+                    array('controller'=>'books',
+                        'action' => 'index')); ?>">Buku</a></li>
+            <li><a href="<?php echo $this->Html->url(
+                    array('controller'=>'Activities',
+                        'action' => 'index')); ?>">Aktifitas</a></li>
+            <li><a href="<?php echo $this->Html->url(
+                    array('controller'=>'Facilities',
+                        'action' => 'index')); ?>">Fasilitas</a></li>
             <li><a href="#">Section 4</a></li>
         </ul>
     </div>

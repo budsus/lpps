@@ -2,7 +2,9 @@
 
 class ActivitiesController extends AppController{
 
-    var $components = array('Twitter.Twitter');
+   // var $components = array('Twitter.Twitter');
+    var $components = array('Session');
+    public $layout = "utama";
 
     public function index(){
         $activities = $this->Activity->find('all');
@@ -76,7 +78,7 @@ class ActivitiesController extends AppController{
     function save() {
         if (!empty($this->data)) {
             if ($this->Activity->save($this->data)){
-                //$this->Session->setFlash('Ubah data berhasil', 'default', array('class' => 'success'));
+                $this->Session->setFlash('Ubah data berhasil', 'default', array('class' => 'success'));
             }
             $this->redirect('/activities');
         }

@@ -27,19 +27,19 @@ if ($nmcontroller == 'books' || $nmcontroller == 'Books' ||$nmcontroller == 'Buy
 <!DOCTYPE html>
 <html>
 <head>
-	<title><?php echo $judul;?></title>
+    <title><?php echo $judul;?></title>
 
     <?php echo $this->Html->css(
         array('foundation.min.css','general_foundicons.css',
-        'foundation.css'));
+            'foundation.css'));
     echo $this->Html->css('/css/fullcalendar');
     ?>
 
-	<?php echo $this->Html->script(array(
-        'jquery-1.10.2.min.js','foundation.min.js',
-        '/full_calendar/js/fullcalendar.min', '/full_calendar/js/jquery.qtip-1.0.0-rc3.min', 'ready',
+    <?php echo $this->Html->script(array(
+        'foundation.min.js',
+        'jquery-1.5.min.js', '/full_calendar/js/jquery-ui-1.8.9.custom.min', '/full_calendar/js/fullcalendar.min', '/full_calendar/js/jquery.qtip-1.0.0-rc3.min', 'ready',
 
-					), array('inline' => 'false'));
+    ), array('inline' => 'false'));
 
 
     ?>
@@ -55,14 +55,7 @@ if ($nmcontroller == 'books' || $nmcontroller == 'Books' ||$nmcontroller == 'Buy
             width: 15%;
         }
 
-      #EventEndMonth, #EventEndDay, #EventEndYear,#EventEndHour,#EventEndMin,#EventEndMeridian{
-          width: 15%;
-      }
-        #TempeventStartMonth, #TempeventStartDay, #TempeventStartYear,#TempeventStartHour,#TempeventStartMin,#TempeventStartMeridian{
-            width: 15%;
-        }
-
-        #TempeventEndMonth, #TempeventEndDay, #TempeventEndYear,#TempeventEndHour,#TempeventEndMin,#TempeventEndMeridian{
+        #EventEndMonth, #EventEndDay, #EventEndYear,#EventEndHour,#EventEndMin,#EventEndMeridian{
             width: 15%;
         }
 
@@ -77,7 +70,7 @@ if ($nmcontroller == 'books' || $nmcontroller == 'Books' ||$nmcontroller == 'Buy
 
 <?php
 if($bookactive==1)
-echo $this->element('sidebarBooks');
+    echo $this->element('sidebarBooks');
 else if($activityactive==1)
     echo $this->element('sidebarActivities');
 else
