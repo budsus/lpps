@@ -4,6 +4,8 @@ class  BooksController extends AppController {
     var $name = "Books";
     public $layout = "utama";
     public $uses = 'Book';
+    //var $components = array('RequestHandler');
+    var $components = array('Session');
     var $paginate = array(
                         'limit' => 25,
                         'order' => array(
@@ -40,8 +42,7 @@ class  BooksController extends AppController {
         if ($userid != null) {
             if ($this->Book->delete($userid)) {
                 $this->Session->setFlash(
-                        "Data user " . $userid + " telah terhapus", 
-                        "default",
+                       'Berhasil dihapus',
                         array("class"=>"success")
                     );
             } else {
@@ -71,7 +72,7 @@ class  BooksController extends AppController {
     function simpan() {
         if (!empty($this->data)) {
             if ($this->Book->save($this->data)){
-                $this->Session->setFlash('Ubah detail buku berhasil', 'default', array('class' => 'success'));
+                $this->Session->setFlash('Ubah detail buku berhasil');
             }
             $this->redirect(array('action'=>'index'));
         }

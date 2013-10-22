@@ -2,7 +2,9 @@
 
 class ActivitiesController extends AppController{
 
-    //var $components = array('Twitter.Twitter');
+   // var $components = array('Twitter.Twitter');
+    var $components = array('Session');
+    public $layout = "utama";
 
     public function index(){
         $activities = $this->Activity->find('all');
@@ -14,8 +16,25 @@ class ActivitiesController extends AppController{
     public function add(){
         if($this->request->is('post')){
             $this->Activity->save($this->request->data);
+
+            /*$oauth_token = ['82333236-KJWuWjpuZCtIzWwdqxqfGx0oKMUH4UlUbrpuhlKvY'];
+            $oauth_token_secret = ['kyc351mvGgNVK3Jd8iCeIBrScbLVmrL5CZtCuDCrd8'];
+            $this->Activity->load('Twitter.Twitter', array(
+                'oauthToken' => $oauth_token,
+                'oauthTokenSecret' => $oauth_token_secret,
+            ));*/
+            $this->Twitter->updateStatus('test: tweet via CakePHP');
+
+
+            /*if($this->Facebook->share('http://www.example.com/url_to_share'))
+            {
+                pr('success');
+            }
+            else{pr('failed');}*/
+
             ?>
-            <script type="text/javascript">FB.getLoginStatus(function(response) {
+            <script type="text/javascript">
+                FB.getLoginStatus(function(response) {
                     if (response.status === 'connected') {
                         FB.api('/me/feed', 'post', { message: body }, function(response) {
                             if (!response || response.error) {
@@ -27,9 +46,20 @@ class ActivitiesController extends AppController{
                         });
                     }
                 });</script>
+
             <?php $this->redirect('/activities');
         }
     }
+
+    /*public function afterSave($created) {
+        $oauth_token = ['82333236-KJWuWjpuZCtIzWwdqxqfGx0oKMUH4UlUbrpuhlKvY'];
+        $oauth_token_secret = ['kyc351mvGgNVK3Jd8iCeIBrScbLVmrL5CZtCuDCrd8'];
+        $this->Behaviors->load('Twitter.Twitter', array(
+            'oauthToken' => $oauth_token,
+            'oauthTokenSecret' => $oauth_token_secret,
+        ));
+        $this->updateStatus('Some message you want to tweet');
+    }*/
 
     function edit($id = null) {
         $this->set('judul', 'Ubah Detail Kegiatan');
@@ -48,7 +78,7 @@ class ActivitiesController extends AppController{
     function save() {
         if (!empty($this->data)) {
             if ($this->Activity->save($this->data)){
-                //$this->Session->setFlash('Ubah data berhasil', 'default', array('class' => 'success'));
+                $this->Session->setFlash('Ubah data berhasil', 'default', array('class' => 'success'));
             }
             $this->redirect('/activities');
         }

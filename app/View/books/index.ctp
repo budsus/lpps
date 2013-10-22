@@ -1,4 +1,5 @@
 <h6>Daftar Buku</h6>
+<?php echo $this->Session->flash();?>
 <p>&nbsp;</p>
 <div>
 
@@ -11,10 +12,15 @@
 <table>
 	<thead>
 		<tr>
+            <th>
+                <a href="<?php echo $this->Html->url(array('controller'=>'books','action'=>'tambah')); ?>">
+                    <button class="btn btn-primary" type="button">Tambah baru</button>
+                </a>
+            </th>
 			<th>Judul</th>
 			<th>Keterangan</th>
 			<th>Harga</th>
-			<th colspan="3">Action</th>
+
 
 		</tr>
 	</thead>
@@ -28,18 +34,44 @@
 		// jika sudah ada data akun user
 		foreach($data as $b):
 	?>
+            <td style="width:100px;">
+                <div class="btn-group">
+                    <a href="#" data-dropdown="drop<?php echo $b['Book']['id'] ?>" class="small secondary radius button dropdown" >Action </a><br>
+                    <ul id="drop<?php echo $b['Book']['id'] ?>" data-dropdown-content class="f-dropdown">
+                        <li>
+                            <a href="<?php echo $this->Html->url(
+                                array('controller' => 'Books',
+                                    'action'=>'ubah',
+                                    $b['Book']['id'])); ?>">
+                                Ubah
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php echo $this->Html->url(
+                                array('controller' => 'Books',
+                                    'action'=>'hapus',
+                                    $b['Book']['id'])); ?>"
+                               onclick="return confirm('Yakin untuk dihapus?');">
+                                Hapus
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php echo $this->Html->url(
+                                array('controller' => 'Buys',
+                                    'action'=>'beli',
+                                    $b['Book']['id'])); ?>" >
+                               Beli
+                            </a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </td>
 	<td><?php echo $b['Book']['judul']; ?></td>
 	<td><?php echo $b['Book']['keterangan']; ?></td>
 	<td><?php echo $b['Book']['harga']; ?></td>
-	<td class='button secondary'> <a href="<?php echo $this->Html->url(
-									array('controller' => 'books', 'action'=>'hapus', $b['Book']['id'])); ?>" onclick="return confirm('Yakin untuk dihapus?');">
-						Hapus</a></td>
-	<td class='button secondary'> <a href="<?php echo $this->Html->url(
-									array('controller' => 'books', 'action'=>'ubah', $b['Book']['id'])); ?>">
-						Ubah</a></td>
-	<td class='button secondary'> <a href="<?php echo $this->Html->url(
-									array('controller' => 'buys', 'action'=>'beli', $b['Book']['id'])); ?>">
-						Beli</a></td>
+
 	</tr>
 	<?php
 		endforeach;

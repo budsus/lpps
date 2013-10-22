@@ -1,26 +1,23 @@
 <h2>Informasi Kegiatan</h2>
-
+<?php echo $this->Session->flash();?>
 <p>Halaman ini memuat daftar kegiatan yang diselenggarakan oleh LPPS</p>
-<a href="<?php echo $this->Html->url('/activities/add'); ?>"
-   class="btn">
-    Tambah Kegiatan
-</a>
+
 <table>
     <tr>
+        <th>
+            <a href="<?php echo $this->Html->url(array('controller'=>'Activities','action'=>'add')); ?>">
+                <button class="btn btn-primary" type="button">Tambah baru</button>
+            </a>
+        </th>
         <th>Nama Kegiatan</th>
         <th>Penyelenggaraan</th>
     </tr>
     <?php foreach($activities as $activity): ?>
     <tr>
-        <td><?php echo $this->Html->link($activity['Activity']['nama_kegiatan'],
-                array('controller' => 'activities', 'action' => 'detail', $activity['Activity']['id'])); ?></td>
-        <td><?php echo $activity['Activity']['penyelenggaraan']; ?></td>
-        <td><div class="btn-group">
-                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-                    Action
-                    <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu">
+        <td style="width:100px;">
+            <div class="btn-group">
+                <a href="#" data-dropdown="drop<?php echo $activity['Activity']['id'] ?>" class="small secondary radius button dropdown" >Action </a><br>
+                <ul id="drop<?php echo $activity['Activity']['id'] ?>" data-dropdown-content class="f-dropdown">
                     <li>
                         <a href="<?php echo $this->Html->url(
                             array('controller' => 'Activities',
@@ -38,8 +35,16 @@
                             Hapus
                         </a>
                     </li>
+
+
+
                 </ul>
-            </div></td>
+            </div>
+        </td>
+        <td><?php echo $this->Html->link($activity['Activity']['nama_kegiatan'],
+                array('controller' => 'activities', 'action' => 'detail', $activity['Activity']['id'])); ?></td>
+        <td><?php echo $activity['Activity']['penyelenggaraan']; ?></td>
+
     </tr>
     <?php endforeach ?>
 

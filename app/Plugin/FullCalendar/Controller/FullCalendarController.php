@@ -13,7 +13,7 @@
 class FullCalendarController extends FullCalendarAppController {
     var $uses = array('Facility','Galery');
 	var $name = 'FullCalendar';
-    //var $layout='pemesanan';
+    var $layout='utama';
 	function index() {
         $this->set('judul','Pemesanan Fasilitas');
         $total=$this->Facility->find('count');

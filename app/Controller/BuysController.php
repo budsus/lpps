@@ -4,6 +4,7 @@ class  BuysController extends AppController {
     var $name = "Buys";
     public $layout = "utama";
     public $uses = 'Buy';
+    var $components = array('Session');
     var $paginate = array(
                         'limit' => 25,
                         'order' => array(
@@ -13,9 +14,10 @@ class  BuysController extends AppController {
 
    function index() {
         $data = $this->paginate('Buy');
+        //$data = $this->Buy->Book->findById($id);
         $this->set('data', $data);
         $this->set('judul', 'Daftar Pembeli Buku');
-
+//pr($data);
         /*if(isset($this->passedArgs['Book.judul'])) {
             $this->paginate['conditions'][]['Books.judul LIKE'] = str_replace('*','%',$this->passedArgs['Book.judul']);
             $this->data['Book']['judul'] = $this->passedArgs['Book.judul'];
@@ -23,16 +25,23 @@ class  BuysController extends AppController {
         }*/
 
         //$posts = $this->paginate(); 
+
     }
 
-    function beli(){
-        $books = $this->Buy->Book->findById($id);
-        $this->set('judul', 'Tambah Pembeli');
+    function beli($id = null){
+
+        $data = $this->Buy->Book->findById($id);
+        $this->set('data', $data);
+       //pr($data);
+        $books=$this->Buy->Book->find("list");
+        //pr($books);
+        $this->set('books', $books);
+        //pr($this->Buy->Book->find("list"));
+        $this->set('judul', 'Pesan Buku');
         if($this->request->is('post')){
             $this->Buy->create();
             $this->Buy->save($this->request->data);
-            $this->redirect('/Buys');
-
+            $this->redirect('/Books');
         }
     }
 

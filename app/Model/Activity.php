@@ -1,7 +1,11 @@
 <?php
 
 class Activity extends AppModel{
-    public $displayField='nama_kegiatan';
+
+    public $hasMany = array(
+        'Participant'
+    );
+
     public $validate = array(
         'nama_kegiatan' => array(
             'rule' => 'notEmpty',
@@ -21,10 +25,6 @@ class Activity extends AppModel{
             )
         )
     );
-    public $helpers = array('Facebook.Facebook');
-
-    public $hasMany=array(
-        'Participant'
-    );
+    public $helpers = array('Facebook.Facebook', 'Twitter.Twitter');
 }
 ?>

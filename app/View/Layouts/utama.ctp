@@ -1,44 +1,72 @@
 <?php
+// simpan di app/views/elements/navigasi.ctp
+//
+// cek nama controller apakah main
+$nmcontroller = $this->params['controller'];
+$bookactive = "";
+$facilityactive = "";
+$activityactive = "";
+if ($nmcontroller == 'books' || $nmcontroller == 'Books' ||$nmcontroller == 'Buys' ||$nmcontroller == 'buys'|| $nmcontroller == 'Bulletins' || $nmcontroller == 'Materials'|| $nmcontroller == 'bulletins' ) {
+    $bookactive = 1;
+    $facilityactive = 0;
+    $activityactive=0;
+} else if ($nmcontroller == 'Facilities') {
+    $facilityactive = 1;
+    $bookactive = 0;
+    $activityactive=0;
+} else if ($nmcontroller == 'Activities') {
+    $activityactive = 1;
+    $facilityactive = 0;
+    $bookactive = 0;
+}
+?>
+
+<?php
 // lokasi: app/views/layouts/utama.ctp
 ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<title><?php echo $judul;?></title>
-    <script type="text/javascript">
-        plgFcRoot = '<?php echo $this->Html->url('/'); ?>' + "full_calendar";
-    </script>
 
     <?php echo $this->Html->css(
         array('foundation.min.css','general_foundicons.css',
         'foundation.css'));
-
+    echo $this->Html->css('/css/fullcalendar');
     ?>
+
 	<?php echo $this->Html->script(array(
-        'jquery-1.10.2.min.js',
-					  'foundation.min.js',
+        'jquery-1.10.2.min.js','foundation.min.js',
+        '/full_calendar/js/fullcalendar.min', '/full_calendar/js/jquery.qtip-1.0.0-rc3.min', 'ready',
 
-                    'custom.modernizr.js'
-					));
+					), array('inline' => 'false'));
 
 
     ?>
+
+
 
 
     <style>
-      body {
-        padding-top: 0px;
+
+
+
+        #EventStartMonth, #EventStartDay, #EventStartYear,#EventStartHour,#EventStartMin,#EventStartMeridian{
+            width: 15%;
+        }
+
+      #EventEndMonth, #EventEndDay, #EventEndYear,#EventEndHour,#EventEndMin,#EventEndMeridian{
+          width: 15%;
       }
-	  footer {
+        #TempeventStartMonth, #TempeventStartDay, #TempeventStartYear,#TempeventStartHour,#TempeventStartMin,#TempeventStartMeridian{
+            width: 15%;
+        }
 
-		bottom: 0;
-	  }
+        #TempeventEndMonth, #TempeventEndDay, #TempeventEndYear,#TempeventEndHour,#TempeventEndMin,#TempeventEndMeridian{
+            width: 15%;
+        }
 
-       #flashMessage{
-           color: red;
-           font-size: 14pt;
-           font-weight:bold;
-       }
+
     </style>
 </head>
 
@@ -47,16 +75,24 @@
 
 <?php echo $this->element('navigasi'); ?>
 
-<?php echo $this->element('sidebar'); ?>
+<?php
+if($bookactive==1)
+echo $this->element('sidebarBooks');
+else if($activityactive==1)
+    echo $this->element('sidebarActivities');
+else
+    echo $this->element('sidebarFacilities');
+
+?>
 
 <?php echo $this->element('footer'); ?>
-    <script>
-        document.write('<script src=/js/vendor/'
-            + ('__proto__' in {} ? 'zepto' : 'jquery')
-            + '.js><\/script>');
-    </script>
-    <script>
-        $(document).foundation();
-    </script>
+<script>
+    document.write('<script src=/js/vendor/'
+        + ('__proto__' in {} ? 'zepto' : 'jquery')
+        + '.js><\/script>');
+</script>
+<script>
+    $(document).foundation();
+</script>
 </body>
 </html>

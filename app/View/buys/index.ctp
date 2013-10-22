@@ -25,7 +25,7 @@
 		foreach($data as $b):
 	?>
 	<td><?php echo $b['Buy']['nama']; ?></td>
-	<td><?php echo $b['Buy']['judul']; ?></td>
+	<td><?php echo $b['Book']['judul']; ?></td>
 	<td><?php echo $b['Buy']['notelp']; ?></td>
 	<td><?php echo $b['Buy']['keterangantambahan']; ?></td>
 	<td class='button secondary'> <a href="<?php echo $this->Html->url(
