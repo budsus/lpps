@@ -13,6 +13,13 @@ class ActivitiesController extends AppController{
         $this->set('activities',$activities);
     }
 
+    public function index_user(){
+        $activities = $this->Activity->find('all');
+        //pr($activities);
+
+        $this->set('activities',$activities);
+    }
+
     public function add(){
         if($this->request->is('post')){
             $this->Activity->save($this->request->data);
