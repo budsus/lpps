@@ -1,4 +1,4 @@
-<h2>Daftar Peserta Kegiatan X</h2>
+<h2>Daftar Peserta Kegiatan</h2>
 
 <table>
     <tr>
@@ -13,3 +13,4 @@
         <td><?php echo $participant['Participant']['telp']; ?></td>
     </tr>
 <?php endforeach ?>
+   </table>

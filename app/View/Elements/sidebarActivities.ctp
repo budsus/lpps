@@ -19,9 +19,6 @@
                     array('controller'=>'Activities',
                         'action' => 'index')); ?>">List Daftar Kegiatan</a></li>
 
-
-            <li><a href="#">Section 5</a></li>
-            <li><a href="#">Section 6</a></li>
         </ul>
 
         <p><img src="http://placehold.it/320x240&text=Ad" /></p>

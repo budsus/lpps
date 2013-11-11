@@ -22,6 +22,10 @@
         'action'=>'add',
         $post['Activity']['id'])); ?>"><button>Daftar Sebagai Peserta</button></a><br /><br />
 <?php
+echo $this->Html->link('Download Brosur',array('action' => 'download', $post['Activity']['id']));
+?><br />
+<h3>Poster</h3>
+<?php
 
     $directory=$post['Activity']['poster_dir'];
 
@@ -36,7 +40,7 @@ $this->Facebook->share(
 //array('controller' => 'activities', 'action' => 'detail', $activity['Activity']['id'])));
 ?>
 
-<a href="#"
+<!--<a href="#"
    onclick="
     window.open(
       'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
@@ -44,8 +48,5 @@ $this->Facebook->share(
       'width=626,height=436');
     return false;">
     Share on Facebook
-</a ><br /> <br/>
+</a ><br /> <br/> -->
 
-<?php
-echo $this->Html->link('download brosur',array('action' => 'download', $post['Activity']['id']));
-?>

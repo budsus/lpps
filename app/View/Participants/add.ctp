@@ -1,3 +1,5 @@
+<h3>Daftar Peserta Baru</h3>
+
 <?php
 echo $this->Form->create('Participant');
 echo $this->Form->input('nama_lengkap');

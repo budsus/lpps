@@ -1,6 +1,7 @@
 <?php
 
 class ParticipantsController extends AppController{
+    public $layout = "utama";
 
     public function add($id){
 
