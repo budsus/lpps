@@ -1,16 +1,12 @@
+<?php echo $this->Session->flash();?>
 <h6>Daftar Material</h6>
 <p>&nbsp;</p>
 <table>
 	<thead>
 		<tr>
-            <th>
-                <a href="<?php echo $this->Html->url(array('controller'=>'Materials','action'=>'tambah')); ?>">
-                    <button class="btn btn-primary" type="button">Tambah baru</button>
-                </a>
-            </th>
 			<th>Judul</th>
 			<th>Keterangan</th>
-
+			<th colspan="3">Action</th
 		</tr>
 	</thead>
 	<?php 
@@ -22,46 +18,30 @@
 	} else {
 		// jika sudah ada data akun user
 		foreach($data as $m):
+
 	?>
-
-            <td style="width:100px;">
-                <div class="btn-group">
-                    <a href="#" data-dropdown="drop<?php echo $m['Material']['id'] ?>" class="small secondary radius button dropdown" >Action </a><br>
-                    <ul id="drop<?php echo$m['Material']['id'] ?>" data-dropdown-content class="f-dropdown">
-                        <li>
-                            <a href="<?php echo $this->Html->url(
-                                array('controller' => 'Materials',
-                                    'action'=>'ubah',
-                                    $m['Material']['id'])); ?>">
-                                Ubah
-                            </a>
-                        </li>
-                        <li>
-                            <a href="<?php echo $this->Html->url(
-                                array('controller' => 'Materials',
-                                    'action'=>'hapus',
-                                    $m['Material']['id'])); ?>"
-                               onclick="return confirm('Yakin untuk dihapus?');">
-                                Hapus
-                            </a>
-                        </li>
-                        <li>
-                            <a href="<?php echo $this->Html->url(
-                                array('controller' => 'Materials',
-                                    'action'=>'download',
-                                    $m['Material']['id'])); ?>" >
-                                Download
-                            </a>
-                        </li>
-
-
-                    </ul>
-                </div>
-            </td>
-	<td><?php echo $m['Material']['judul']; ?></td>
+		<td><?php echo $m['Material']['judul']; ?></td>
 	<td><?php echo $m['Material']['keterangan']; ?></td>
+	
+	<?php
+			  if ($this->Session->check('user')) {
+				$ouser = $this->Session->read('user');
+				if ($ouser['User']['akses'] == 'admin') {
+			  ?>
 
+	<td class='button secondary'> <a href="<?php echo $this->Html->url(
+									array('controller' => 'materials', 'action'=>'hapus', $m['Material']['id'])); ?>" onclick="return confirm('Yakin untuk dihapus?');">
+						Hapus</a></td>
+	<td class='button secondary'> <a href="<?php echo $this->Html->url(
+									array('controller' => 'materials', 'action'=>'ubah', $m['Material']['id'])); ?>">
+						Ubah</a></td>
+		<?php
+			}
+		  }
+		  ?>
+	<td class='button secondary'><?php echo $this->Html->link('Download',array('action' => 'download',$m['Material']['id'])); ?></td>
 	</tr>
+
 	<?php
 		endforeach;
 	}
