@@ -1,9 +1,10 @@
 <?php
 
 class ParticipantsController extends AppController{
+    public $layout = "utama";
 
     public function add($id){
-
+        $this->set('judul', 'Pendaftaran Peserta');
         $activities = $this->Participant->Activity->findById($id);
         $this->set('data',$activities);
 
@@ -14,7 +15,7 @@ class ParticipantsController extends AppController{
     }
 
     function participantList($id = null) {
-
+        $this->set('judul', 'Daftar Peserta yang telah terdaftar');
         if (!$id) {
             throw new NotFoundException(__('Invalid post'));
         }

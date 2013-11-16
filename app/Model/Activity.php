@@ -14,6 +14,14 @@ class Activity extends AppModel{
         'penyelenggaraan' => array(
             'rule' => 'notEmpty',
             'message' => 'Penyelenggaraan harus diisi. (Bulan diselenggarakannya kegiatan)'
+        ),
+        'deskripsi_singkat' => array(
+            'rule' => 'notEmpty',
+            'message' => 'Deskripsi singkat kegiatan harus diisi'
+            ),
+        'poster'=>array(
+            'rule' => array('isValidMimeType', array('image/jpg', 'image/png','image/jpeg'), ),
+            'message' => 'Format file harus berupa jpg atau png'
         )
         );
     public $actsAs = array(
@@ -21,6 +29,11 @@ class Activity extends AppModel{
             'brosur' => array(
                 'fields' => array(
                     'dir' => 'brosur_dir'
+                )
+            ),
+            'poster' => array(
+                'fields' => array(
+                    'dir' => 'poster_dir'
                 )
             )
         )

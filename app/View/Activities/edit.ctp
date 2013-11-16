@@ -1,10 +1,9 @@
  <h2>Ubah Detail Kegiatan</h2>
-    <p>&nbsp;</p>
     <div>
-        <a href="<?php echo $this->Html->url('/activities'); ?>"
-           class="btn">
-            Kembali ke daftar
+        <a href="<?php echo $this->Html->url('/activities'); ?>">
+            <button class="btn" type="button">Kembali ke daftar</button>
         </a>
+        <br />
     </div>
 <?php
 echo $this->Form->create('Activity', array('action' => 'save', 'type' => 'file'));
@@ -17,6 +16,9 @@ echo $this->Form->input('Activity.nama_kegiatan',
 echo $this->Form->input('Activity.penyelenggaraan',
     array('type' =>'text',
         'value' => $data['Activity']['penyelenggaraan']));
+echo $this->Form->input('Activity.deskripsi_singkat',
+    array('type' =>'text',
+        'value' => $data['Activity']['deskripsi_singkat']));
 echo $this->Form->input('Activity.latar_belakang',
     array('type' =>'text',
         'value' => $data['Activity']['latar_belakang']));

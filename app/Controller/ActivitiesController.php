@@ -9,57 +9,24 @@ class ActivitiesController extends AppController{
     public function index(){
         $activities = $this->Activity->find('all');
         //pr($activities);
+        $this->set('judul', 'Informasi Kegiatan LPPS');
+        $this->set('activities',$activities);
+    }
 
+    public function index_user(){
+        $activities = $this->Activity->find('all');
+        //pr($activities);
+        $this->set('judul', 'Informasi Kegiatan LPPS');
         $this->set('activities',$activities);
     }
 
     public function add(){
+        $this->set('judul', 'Tambah Kegiatan Baru');
         if($this->request->is('post')){
             $this->Activity->save($this->request->data);
-
-            /*$oauth_token = ['82333236-KJWuWjpuZCtIzWwdqxqfGx0oKMUH4UlUbrpuhlKvY'];
-            $oauth_token_secret = ['kyc351mvGgNVK3Jd8iCeIBrScbLVmrL5CZtCuDCrd8'];
-            $this->Activity->load('Twitter.Twitter', array(
-                'oauthToken' => $oauth_token,
-                'oauthTokenSecret' => $oauth_token_secret,
-            ));*/
-            $this->Twitter->updateStatus('test: tweet via CakePHP');
-
-
-            /*if($this->Facebook->share('http://www.example.com/url_to_share'))
-            {
-                pr('success');
-            }
-            else{pr('failed');}*/
-
-            ?>
-            <script type="text/javascript">
-                FB.getLoginStatus(function(response) {
-                    if (response.status === 'connected') {
-                        FB.api('/me/feed', 'post', { message: body }, function(response) {
-                            if (!response || response.error) {
-                                document.write("<p>success</p>");
-                            }
-                            else{
-                                document.write("<p>fail</p>");
-                            }
-                        });
-                    }
-                });</script>
-
-            <?php $this->redirect('/activities');
+            $this->redirect('/activities');
         }
     }
-
-    /*public function afterSave($created) {
-        $oauth_token = ['82333236-KJWuWjpuZCtIzWwdqxqfGx0oKMUH4UlUbrpuhlKvY'];
-        $oauth_token_secret = ['kyc351mvGgNVK3Jd8iCeIBrScbLVmrL5CZtCuDCrd8'];
-        $this->Behaviors->load('Twitter.Twitter', array(
-            'oauthToken' => $oauth_token,
-            'oauthTokenSecret' => $oauth_token_secret,
-        ));
-        $this->updateStatus('Some message you want to tweet');
-    }*/
 
     function edit($id = null) {
         $this->set('judul', 'Ubah Detail Kegiatan');
@@ -86,6 +53,7 @@ class ActivitiesController extends AppController{
     }
 
     function detail($id = null) {
+        $this->set('judul', 'Detail Kegiatan');
         if (!$id) {
             throw new NotFoundException(__('Invalid post'));
         }
@@ -136,15 +104,6 @@ class ActivitiesController extends AppController{
         $this->Twitter->connectApp('YOUR_CALLBAK_URL');
     }
 
-    /*public function afterSave($created) {
-        $oauth_token = [either a session or from where the token is saved in db];
-        $oauth_token_secret = [either a session or from where the token is saved in db];
-        $this->Behaviors->load('Twitter.Twitter', array(
-            'oauthToken' => $oauth_token,
-            'oauthTokenSecret' => $oauth_token_secret,
-        ));
-    $this->updateStatus('Some message you want to tweet');
-}*/
 
 }
 
