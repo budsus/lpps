@@ -1,4 +1,7 @@
 <?php echo $this->Session->flash();?>
+<h5><button class='button secondary'><a href="<?php echo $this->Html->url(
+              array('controller'=>'books',
+                    'action' => 'tambah')); ?>">Tambah Buku</a></h5>
 <h6>Daftar Buku</h6>
 <p>&nbsp;</p>
 <div>
@@ -9,8 +12,18 @@
 		echo $this->Form->end('Search');*/
 	?>
 </div>
+ 
 <table>
-	
+	<thead>
+		<tr>
+			<th>Judul</th>
+			<th>Cover</th>
+			<th>Keterangan</th>
+			<th>Harga</th>
+			<th colspan="3">Action</th>
+
+		</tr>
+	</thead>
 
 	<?php 
 	// jika tidak ada data user
@@ -25,21 +38,8 @@
 		    $file=$b['Book']['cover'];
 			$path=  $this->webroot.'app/webroot/files/book/cover/'.$directory.'/'.$file ;
 
-
-			  if ($this->Session->check('user')) {
-				$ouser = $this->Session->read('user');
-				if ($ouser['User']['akses'] == 'admin') {
 	?>
-	<thead>
-		<tr>
-			<th>Judul</th>
-			<th>Cover</th>
-			<th>Keterangan</th>
-			<th>Harga</th>
-			<th colspan="3">Action</th>
-
-		</tr>
-	</thead>
+	
 
 	<td><?php echo $b['Book']['judul']; ?></td>
 	<td><img width="200" height="200" src="<?php echo $path; ?>"></td>
@@ -56,26 +56,7 @@
 									array('controller' => 'buys', 'action'=>'beli', $b['Book']['id'])); ?>">
 						Beli</a></td>
 	</tr>
-	<?php
-				}
-			  }
-			  else
-			  {
-			  ?>
-			  <div class="large-4 small-6 columns">
-              <img width="200px" height="200px" src="<?php echo $path; ?>">
-
-              <div class="panel">
-                <h5><?php echo $b['Book']['judul']; ?></h5>
-                <h6 class="subheader">Harga : <?php echo $b['Book']['harga']; ?></h6>
-                <class="subheader"><?php echo $b['Book']['keterangan']; ?>
-                <h6 class="class='button secondary"><a href="<?php echo $this->Html->url(
-                  array('controller' => 'buys', 'action'=>'beli', $b['Book']['id'])); ?>">Beli</a></h6>
-              </div>
-            </div>
-			  <?php
-			  }
-			  ?>
+	
 	<?php
 		endforeach;
 	}
