@@ -48,10 +48,10 @@
 </style>
 <body>
 <?php echo $this->element('navigasiUser'); ?>
-<?php echo $this->Session->flash();  ?>
-<div class="row"><?php echo $content_for_layout; ?></div>
 
-<?php echo $this->element('footer'); ?>
+<div class="row"><?php echo $this->Session->flash();  ?><?php echo $content_for_layout; ?></div>
+
+<?php echo $this->element('footeruser'); ?>
 <script>
     document.write('<script src=/js/vendor/'
         + ('__proto__' in {} ? 'zepto' : 'jquery')

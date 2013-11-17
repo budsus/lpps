@@ -24,7 +24,19 @@
 	<tr><td colspan="4">Belum ada data buku.</td></tr>
 	<?php 
 	} else {
+?>
+        <thead>
+        <tr>
+            <th></th>
+            <th>Judul</th>
+            <th>Cover</th>
+            <th>Keterangan</th>
+            <th>Harga</th>
+            <th colspan="3">Action</th>
 
+        </tr>
+        </thead>
+        <?php
 		// jika sudah ada data akun user
 		foreach($data as $b):
 			$directory=$b['Book']['cover_dir'];
@@ -36,17 +48,7 @@
 
 	?>
 
-	<thead>
-		<tr>
-            <th></th>
-			<th>Judul</th>
-			<th>Cover</th>
-			<th>Keterangan</th>
-			<th>Harga</th>
-			<th colspan="3">Action</th>
 
-		</tr>
-	</thead>
 
 	<td><?php echo $b['Book']['judul']; ?></td>
 	<td><img width="200" height="200" src="<?php echo $path; ?>"></td>

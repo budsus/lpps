@@ -17,6 +17,17 @@ class StaffsController extends AppController{
         $this->set('staffs', $staffs);
     }
 
+    public function index_user(){
+        $this->layout = "utamauser";
+        $data = $this->paginate('Staff');
+        $this->set('data', $data);
+        $this->set('judul', 'Profil Staff');
+        $staffs = $this->Staff->find('all');
+        //pr($profiles);
+
+        $this->set('staffs', $staffs);
+    }
+
     public function tambah(){
         $this->set('judul', 'Tambah Staff');
         if($this->request->is('post')){

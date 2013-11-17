@@ -8,7 +8,24 @@ class ProfilesController extends AppController{
     var $components = array('RequestHandler');
 
     public function index(){
-        $this->set('judul', 'Profile LPPS');
+        $data = $this->paginate('Profile');
+        $this->set('data', $data);
+        $this->set('judul', 'Profil');
+        $profiles = $this->Profile->find('all');
+        //pr($profiles);
+
+        $this->set('profiles', $profiles);
+    }
+
+    public function index_user(){
+        $this->layout = "utamauser";
+        $data = $this->paginate('Profile');
+        $this->set('data', $data);
+        $this->set('judul', 'Profil');
+        $profiles = $this->Profile->find('all');
+        //pr($profiles);
+
+        $this->set('profiles', $profiles);
     }
 
     public function tampil(){
@@ -19,22 +36,34 @@ class ProfilesController extends AppController{
         $this->set('profiles', $profiles);
 
         }
-    }
 
-    function edit($userid = null) {
-        $this->set('judul', 'Ubah Akun Pemakai');
+    public function edit($userid = null) {
+        $this->set('judul', 'Edit');
         if ($userid != null) {
             // ambil data dari tabel database
-            $datauser = $this->Staff->find('first', array(
+            $datauser = $this->Profile->find('first', array(
                 'conditions' => array(
-                    'Staff.id' => $userid
+                    'Profile.id' => $userid
                 )
             ));
             $this->set('data', $datauser);
         } else {
-            $this->redirect(array('controller'=>'Staff', 'action'=>'index'));
+            $this->redirect(array('controller'=>'Profiles', 'action'=>'index'));
         }
     }
+
+    function simpan() {
+        if (!empty($this->data)) {
+            if ($this->Profile->save($this->data)){
+                //$this->Session->setFlash('Edit Data Staff Berhasil', 'default', array('class' => 'success'));
+            }
+            $this->redirect(array('action'=>'index'));
+        }
+        $this->redirect(array('controller'=>'Profiles', 'action'=>'index'));
+    }
+   }
+
+
 
 
 

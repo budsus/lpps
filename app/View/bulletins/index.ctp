@@ -11,6 +11,18 @@
 	<?php 
 	} else {
 		// jika sudah ada data akun user
+        ?>
+        <thead>
+        <tr>
+            <th>Judul</th>
+            <th>Cover</th>
+            <th>Keterangan</th>
+            <th>Harga</th>
+            <th>Periode</th>
+            <th colspan="3">Action</th
+        </tr>
+        </thead>
+        <?php
 		foreach($data as $l):
 			$directory=$l['Bulletin']['cover_dir'];
 		    $file=$l['Bulletin']['cover'];
@@ -20,16 +32,7 @@
 
 	?>
 
-	<thead>
-		<tr>
-			<th>Judul</th>
-			<th>Cover</th>
-			<th>Keterangan</th>
-			<th>Harga</th>
-			<th>Periode</th>
-			<th colspan="3">Action</th
-		</tr>
-	</thead>
+
 	
 	<td><?php echo $l['Bulletin']['judul']; ?></td>
 	<td><img width="200px" height="200px" src="<?php echo $path; ?>"></td>

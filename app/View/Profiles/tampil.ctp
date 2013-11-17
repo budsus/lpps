@@ -1,5 +1,9 @@
+<h2>Profile LPPS</h2>
+<p>&nbsp;</p>
 
-   <table>
+
+
+<table>
         <?php foreach($profiles as $profile): ?>
         <tr>
             <?php echo $profile['Profile']['judul'];  ?>
@@ -7,7 +11,9 @@
         </tr>
 
         <?php endforeach ?>
-    </table>
+
+ </table>
+
 
 
 

@@ -36,7 +36,7 @@ class UsersController extends AppController{
         }
 
         //3. redirect ke home
-        $this->redirect(array('controller'=>'Activities', 'action'=>'index'));
+        $this->redirect(array('controller'=>'Profiles', 'action'=>'index'));
         }
 
     }
@@ -50,7 +50,7 @@ class UsersController extends AppController{
                 'default', array('class'=>'success'));
         }
         //2. redirect
-        $this->redirect(array('controller'=>'Activities', 'action'=>'index'));
+        $this->redirect(array('controller'=>'Profiles', 'action'=>'index'));
     }
 
 

@@ -75,7 +75,7 @@
 
 <?php } else { ?>
 
-    <div class="row">
+
 
         <?php
 
@@ -93,13 +93,14 @@
 
 
                 <div class="large-4 columns">
-                    <img class='gambardepan' src="<?php echo $path;?>">
+
                     <h4> <a href="<?php echo $this->Html->url(
                             array('controller' => 'Facilities',
                                 'action'=>'detailFasilitas',
                                 $nomorid)); ?>">
                             <?php echo $u['Facility']['nama']; ?>
                         </a></h4>
+                    <img class='gambardepan' src="<?php echo $path;?>">
                     <p> <?php echo $u['Facility']['keterangan']; ?></p>
                 </div>
             <?php }
@@ -120,7 +121,7 @@
             <?php }
         endforeach;
 
-        ?></div>
+        ?>
 
 
 

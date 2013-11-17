@@ -3,7 +3,7 @@
     <button class="small button">Tambah baru</button>
 </a>
 <br><br>
-<b>A. Direktur / Manajer Program</b><br><br>
+<b>Direktur / Manajer Program</b><br><br>
 <table class="table table-hover">
     <thead>
     <tr>
@@ -28,7 +28,7 @@
             if($u['Staff']['golongan'] == 'A'){
             ?>
             <tr>
-                <td style="width:130px;">
+                <td style="width:50px;">
                     <div class="btn-group">
                         <a href="#" data-dropdown="drop<?php echo $u['Staff']['id'] ?>" class="small secondary radius button dropdown">Opsi</a><br>
                         <ul id="drop<?php echo $u['Staff']['id'] ?>" data-dropdown-content class="f-dropdown">
@@ -51,9 +51,9 @@
                         </ul>
                     </div>
                 </td>
-                <td style="width:150px;"><?php echo $u['Staff']['nama']; ?></td>
-                <td style="width:250px;"><?php echo $u['Staff']['jabatan']; ?></td>
-                <td style="width:250px;"><?php echo $u['Staff']['email']; ?></td>
+                <td style="width: 250px"><?php echo $u['Staff']['nama']; ?></td>
+                <td style="width: 230px"><?php echo $u['Staff']['jabatan']; ?></td>
+                <td style="width: 150px"><?php echo $u['Staff']['email']; ?></td>
             </tr>
         <?php }
         endforeach;
@@ -62,7 +62,7 @@
     ?>
 </table>
 
-<b>B.Pelaksana Pembina dan Pengaderan LPPS</b><br><br>
+<b>Pelaksana Pembina dan Pengaderan LPPS</b><br><br>
 <table class="table table-hover">
     <thead>
     <tr>
@@ -87,7 +87,7 @@
             if($u['Staff']['golongan'] == 'B'){
                 ?>
                 <tr>
-                    <td style="width:130px;">
+                    <td style="width:50px;">
                         <div class="btn-group">
                             <a href="#" data-dropdown="drop<?php echo $u['Staff']['id'] ?>" class="small secondary radius button dropdown">Opsi</a><br>
                             <ul id="drop<?php echo $u['Staff']['id'] ?>" data-dropdown-content class="f-dropdown">
@@ -110,9 +110,9 @@
                             </ul>
                         </div>
                     </td>
-                    <td style="width:150px;"><?php echo $u['Staff']['nama']; ?></td>
-                    <td style="width:250px;"><?php echo $u['Staff']['jabatan']; ?></td>
-                    <td style="width:250px;"><?php echo $u['Staff']['email']; ?></td>
+                    <td style="width: 250px"><?php echo $u['Staff']['nama']; ?></td>
+                    <td style="width: 230px"><?php echo $u['Staff']['jabatan']; ?></td>
+                    <td style="width: 150px"><?php echo $u['Staff']['email']; ?></td>
                 </tr>
             <?php }
         endforeach;
@@ -121,7 +121,7 @@
     ?>
 </table>
 
-<b>C. Karyawan</b><br><br>
+<b>Karyawan</b><br><br>
 <table class="table table-hover">
     <thead>
     <tr>
@@ -146,7 +146,7 @@
             if($u['Staff']['golongan'] == 'C'){
                 ?>
                 <tr>
-                    <td style="width:130px;">
+                    <td style="width:50px;">
                         <div class="btn-group">
                             <a href="#" data-dropdown="drop<?php echo $u['Staff']['id'] ?>" class="small secondary radius button dropdown">Opsi</a><br>
                             <ul id="drop<?php echo $u['Staff']['id'] ?>" data-dropdown-content class="f-dropdown">
@@ -169,9 +169,9 @@
                             </ul>
                         </div>
                     </td>
-                    <td style="width:150px;"><?php echo $u['Staff']['nama']; ?></td>
-                    <td style="width:250px;"><?php echo $u['Staff']['jabatan']; ?></td>
-                    <td style="width:250px;"><?php echo $u['Staff']['email']; ?></td>
+                    <td style="width: 250px"><?php echo $u['Staff']['nama']; ?></td>
+                    <td style="width: 230px"><?php echo $u['Staff']['jabatan']; ?></td>
+                    <td style="width: 150px"><?php echo $u['Staff']['email']; ?></td>
                 </tr>
             <?php }
         endforeach;
@@ -180,7 +180,7 @@
     ?>
 </table>
 
-<b>D. PPP-LPP Sinode yang sudah emeritus</b><br><br>
+<b>PPP-LPP Sinode yang sudah emeritus</b><br><br>
 <table class="table table-hover">
     <thead>
     <tr>
@@ -205,7 +205,7 @@
             if($u['Staff']['golongan'] == 'D'){
                 ?>
                 <tr>
-                    <td style="width:130px;">
+                    <td style="width:50px;">
                         <div class="btn-group">
                             <a href="#" data-dropdown="drop<?php echo $u['Staff']['id'] ?>" class="small secondary radius button dropdown">Opsi</a><br>
                             <ul id="drop<?php echo $u['Staff']['id'] ?>" data-dropdown-content class="f-dropdown">
@@ -228,9 +228,9 @@
                             </ul>
                         </div>
                     </td>
-                    <td style="width:150px;"><?php echo $u['Staff']['nama']; ?></td>
-                    <td style="width:250px;"><?php echo $u['Staff']['jabatan']; ?></td>
-                    <td style="width:250px;"><?php echo $u['Staff']['email']; ?></td>
+                    <td style="width: 250px"><?php echo $u['Staff']['nama']; ?></td>
+                    <td style="width: 230px"><?php echo $u['Staff']['jabatan']; ?></td>
+                    <td style="width: 150px"><?php echo $u['Staff']['email']; ?></td>
                 </tr>
             <?php }
         endforeach;
@@ -239,7 +239,7 @@
     ?>
 </table>
 
-<b>E. Staf dan Karyawan Pensiun</b><br><br>
+<b>Staf dan Karyawan Pensiun</b><br><br>
 <table class="table table-hover">
     <thead>
     <tr>
@@ -264,7 +264,7 @@
             if($u['Staff']['golongan'] == 'E'){
                 ?>
                 <tr>
-                    <td style="width:130px;">
+                    <td style="width:50px;">
                         <div class="btn-group">
                             <a href="#" data-dropdown="drop<?php echo $u['Staff']['id'] ?>" class="small secondary radius button dropdown">Opsi</a><br>
                             <ul id="drop<?php echo $u['Staff']['id'] ?>" data-dropdown-content class="f-dropdown">
@@ -287,9 +287,9 @@
                             </ul>
                         </div>
                     </td>
-                    <td style="width:150px;"><?php echo $u['Staff']['nama']; ?></td>
-                    <td style="width:250px;"><?php echo $u['Staff']['jabatan']; ?></td>
-                    <td style="width:250px;"><?php echo $u['Staff']['email']; ?></td>
+                    <td style="width: 250px"><?php echo $u['Staff']['nama']; ?></td>
+                    <td style="width: 230px"><?php echo $u['Staff']['jabatan']; ?></td>
+                    <td style="width: 150px"><?php echo $u['Staff']['email']; ?></td>
                 </tr>
             <?php }
         endforeach;

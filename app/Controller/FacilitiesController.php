@@ -233,7 +233,7 @@ class FacilitiesController extends AppController{
             } else {
                 $this->Session->setFlash("Data tidak dapat dihapus.");
             }
-            $this->redirect(array("controller"=>"Facilities", "action"=>"lihat"));
+            $this->redirect(array("controller"=>"Facilities", "action"=>"index"));
         } else {
             $this->redirect(array('controller'=>'Facilities', 'action'=>'index'));
         }
