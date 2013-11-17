@@ -35,6 +35,6 @@ echo $this->Form->input('Facility.color',
         'Gray' => 'Abu-abu',
         'Black' => 'Hitam',
         'Brown' => 'Coklat'
-    ),'label'=>'Warna (digunakan untuk manajemen pemesanan nanti)','value' => $data['Facility']['color']));
+    ),'type'=>'hidden','label'=>'Warna (digunakan untuk manajemen pemesanan nanti)','value' => $data['Facility']['color']));
 
 echo $this->Form->end('Simpan');

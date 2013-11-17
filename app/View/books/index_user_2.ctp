@@ -18,29 +18,12 @@
 	} else {
 		// jika sudah ada data akun user
 		foreach($data as $m):
-
 	?>
-		<td><?php echo $m['Material']['judul']; ?></td>
+	<td><?php echo $m['Material']['judul']; ?></td>
 	<td><?php echo $m['Material']['keterangan']; ?></td>
 	
-	<?php
-			  if ($this->Session->check('user')) {
-
-			  ?>
-
-	<td class='button secondary'> <a href="<?php echo $this->Html->url(
-									array('controller' => 'materials', 'action'=>'hapus', $m['Material']['id'])); ?>" onclick="return confirm('Yakin untuk dihapus?');">
-						Hapus</a></td>
-	<td class='button secondary'> <a href="<?php echo $this->Html->url(
-									array('controller' => 'materials', 'action'=>'ubah', $m['Material']['id'])); ?>">
-						Ubah</a></td>
-		<?php
-
-		  }
-		  ?>
 	<td class='button secondary'><?php echo $this->Html->link('Download',array('action' => 'download',$m['Material']['id'])); ?></td>
 	</tr>
-
 	<?php
 		endforeach;
 	}

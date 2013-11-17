@@ -13,7 +13,7 @@
                 )
             ),
             'keterangan' => array (
-                'email' => array(
+                'notempty' => array(
                     'rule' => 'notempty',
                     'message' => 'keterangan harus terisi'
                 )
@@ -23,6 +23,8 @@
                     'rule' => 'notempty',
                     'message' => 'Biaya harus terisi.'
                 )
+
+
             )
         );
     }

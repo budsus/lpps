@@ -20,12 +20,12 @@ $(document).ready(function() {
     		center: '',
     		right:  'today agendaDay,agendaWeek,month prev,next'
 		},
-		defaultView: 'agendaWeek',
+		defaultView: 'month',
 		firstHour: 8,
 		weekMode: 'variable',
 		aspectRatio: 2,
 		editable: true,
-		events: plgFcRoot + "/events/feed",
+		events: plgFcRoot + "/feed",
 		eventRender: function(event, element) {
         	element.qtip({
 				content: event.details,
@@ -63,7 +63,7 @@ $(document).ready(function() {
 			} else {
 				var allday = 0;
 			}
-			var url = plgFcRoot + "/events/update?id="+event.id+"&start="+startyear+"-"+startmonth+"-"+startday+" "+starthour+":"+startminute+":00&end="+endyear+"-"+endmonth+"-"+endday+" "+endhour+":"+endminute+":00&allday="+allday;
+			var url = plgFcRoot + "/update?id="+event.id+"&start="+startyear+"-"+startmonth+"-"+startday+" "+starthour+":"+startminute+":00&end="+endyear+"-"+endmonth+"-"+endday+" "+endhour+":"+endminute+":00&allday="+allday;
 			$.post(url, function(data){});
 		},
 		eventResizeStart: function(event) {
@@ -82,7 +82,7 @@ $(document).ready(function() {
 			var endmonth = enddate.getMonth()+1;
 			var endhour = enddate.getHours();
 			var endminute = enddate.getMinutes();
-			var url = plgFcRoot + "/events/update?id="+event.id+"&start="+startyear+"-"+startmonth+"-"+startday+" "+starthour+":"+startminute+":00&end="+endyear+"-"+endmonth+"-"+endday+" "+endhour+":"+endminute+":00";
+			var url = plgFcRoot + "/update?id="+event.id+"&start="+startyear+"-"+startmonth+"-"+startday+" "+starthour+":"+startminute+":00&end="+endyear+"-"+endmonth+"-"+endday+" "+endhour+":"+endminute+":00";
 			$.post(url, function(data){});
 		}
     })

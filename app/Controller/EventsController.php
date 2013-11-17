@@ -120,7 +120,7 @@ class EventsController extends AppController {
         }
     }
 
-   function editTemp($id = null) {
+   /*function editTemp($id = null) {
         $this->set('judul','Pemesanan Fasilitas');
 
         if ($id != null) {
@@ -133,6 +133,21 @@ class EventsController extends AppController {
             $this->set('fasilitas', $this->Tempevent->Facility->find('list'));
             $this->data =$datauser ;
         }
+    }*/
+    function editTemp($id = null) {
+        $this->set('judul','Pemesanan Fasilitas');
+
+        if ($id != null) {
+            // ambil data dari tabel database
+            $datauser = $this->Tempevent->find('first', array(
+                'conditions' => array(
+                    'Tempevent.id' => $id
+                )
+            ));
+            $this->set('fasilitas', $this->Tempevent->Facility->find('list'));
+            $this->data =$datauser ;
+            $this->set('data',$datauser);
+        }
     }
 
     function simpan() {
@@ -140,7 +155,7 @@ class EventsController extends AppController {
     if (!empty($this->data)) {
 
         if ($this->Event->saveAssociated($this->data)){
-            $this->Session->setFlash('Ubah akun berhasil', 'default', array('class' => 'success'));
+            $this->Session->setFlash('Pemesanan berhasil', 'default', array('class' => 'success'));
         }
         $this->redirect(array('action'=>'index'));
     }
@@ -149,19 +164,33 @@ class EventsController extends AppController {
 
 
 
-	function delete($id = null) {
+	function delete($id = null,$clientid=null) {
         $this->set('judul','Pemesanan Fasilitas');
 		if (!$id) {
 			$this->Session->setFlash(__('Invalid id for event', true));
 			$this->redirect(array('action'=>'index'));
 		}
-		if ($this->Event->delete($id)) {
-			$this->Session->setFlash(__('Event deleted', true));
+		if ($this->Event->delete($id,true) ) {
+			$this->Session->setFlash(__('Event berhasil dihapus', true));
 			$this->redirect(array('action'=>'index'));
 		}
 		$this->Session->setFlash(__('Event was not deleted', true));
 		$this->redirect(array('action' => 'index'));
 	}
+
+    function deleteTemp($id = null,$clientid=null) {
+        $this->set('judul','Pemesanan Fasilitas');
+        if (!$id) {
+            $this->Session->setFlash(__('Invalid id for event', true));
+            $this->redirect(array('action'=>'index'));
+        }
+        if ($this->Tempevent->delete($id) && $this->Tempevent->Booker->delete($clientid)) {
+            $this->Session->setFlash(__('Data berhasil dihapus', true));
+            $this->redirect(array('action'=>'add'));
+        }
+        $this->Session->setFlash(__('Event was not deleted', true));
+        $this->redirect(array('action' => 'index'));
+    }
 
         // The feed action is called from "webroot/js/ready.js" to get the list of events (JSON)
 	function feed($id=null) {
@@ -178,16 +207,20 @@ class EventsController extends AppController {
 				$allday = false;
 				$end = $event['Event']['end'];
 			}
-			$data[] = array(
-					'id' => $event['Event']['id'],
-					'title'=>$event['Event']['nama_acara'],
-					'start'=>$event['Event']['start'],
-					'end' => $end,
-					'allDay' => $allday,
-					'url' => Router::url('/') . 'events/view/'.$event['Event']['id'],
-					'details' => $event['Event']['details'],
-					'className' => $event['Facility']['color']
-			);
+            if($event['Event']['status'] != 'Belum Verifikasi')
+            {
+                $data[] = array(
+                    'id' => $event['Event']['id'],
+                    'title'=>$event['Event']['nama_acara'],
+                    'start'=>$event['Event']['start'],
+                    'end' => $end,
+                    'allDay' => $allday,
+                    'url' => Router::url('/') . 'events/edit/'.$event['Event']['id'],
+                    'details' => $event['Event']['details'],
+                    'className' => $event['Facility']['color']
+                );
+            }
+
 		}
 
 		$this->set("json", json_encode($data));

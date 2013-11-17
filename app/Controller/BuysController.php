@@ -12,6 +12,12 @@ class  BuysController extends AppController {
                         )
                     );
 
+    public function beforeFilter(){
+        if(!$this->Session->check('user')){
+
+            $this->layout='facility';
+        }}
+
    function index() {
         $data = $this->paginate('Buy');
         //$data = $this->Buy->Book->findById($id);
@@ -41,7 +47,9 @@ class  BuysController extends AppController {
         if($this->request->is('post')){
             $this->Buy->create();
             $this->Buy->save($this->request->data);
+            $this->Session->setFlash("pesanan Anda sudah masuk proses");
             $this->redirect('/Books');
+
         }
     }
 

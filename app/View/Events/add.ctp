@@ -1,14 +1,5 @@
 <?php
-/*
- * View/Events/add.ctp
- * CakePHP Full Calendar Plugin
- *
- * Copyright (c) 2010 Silas Montgomery
- * http://silasmontgomery.com
- *
- * Licensed under MIT
- * http://www.opensource.org/licenses/mit-license.php
- */
+echo $this->Session->flash();
 ?>
 <div class="events form">
 <?php /* echo $this->Form->create('Event');?>
@@ -59,6 +50,12 @@
 
 ?>
                 <h3>Daftar Calon acara pemesan yang belum dipastikan</h3>
+                <div class="actions">
+                    <ul class="large icon-grid">
+
+                        <li><a href="/lpps2/FullCalendar" class="foundicon-calendar"></a></li>
+                    </ul>
+                </div>
     <div class="events index">
         <h2><?php __('Events');?></h2>
         <table cellpadding="0" cellspacing="0">
@@ -76,7 +73,7 @@
                 <?php
 
             foreach ($events as $event):
-                pr($event);
+                //pr($event);
                 $class = null;
                 if ($i++ % 2 == 0) {
                     $class = ' class="altrow"';
@@ -97,6 +94,7 @@
 
                     <td class="actions">
 
+                        <?php echo $this->Html->link(__('Hapus', true), array('action' => 'deleteTemp', $event['Tempevent']['id'],$event['Tempevent']['booker_id']), null, sprintf(__('Yakin mau hapus acara '.$event['Tempevent']['nama_acara'].'?', true))); ?>
                         <?php echo $this->Html->link(__('Edit', true), array('action' => 'editTemp', $event['Tempevent']['id'])); ?>
                     </td>
                 </tr>
@@ -112,11 +110,6 @@
     <?php } ?>
 
 </div>
-<div class="actions">
-	<ul>
 
-		<li><?php echo $this->Html->link(__('Lihat Calendar', true), array( 'controller' => 'FullCalendar')); ?></li>
-	</ul>
-</div>
 
 

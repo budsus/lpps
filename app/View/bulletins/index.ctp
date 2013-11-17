@@ -1,20 +1,8 @@
 <?php echo $this->Session->flash();?>
-<h5><button class='button secondary'><a href="<?php echo $this->Html->url(
-              array('controller'=>'bulletins',
-                    'action' => 'tambah')); ?>">Tambah Buletin</a></h5>
 <h6>Daftar Bulletin</h6>
 <p>&nbsp;</p>
 <table>
-	<thead>
-		<tr>
-			<th>Judul</th>
-			<th>Cover</th>
-			<th>Keterangan</th>
-			<th>Harga</th>
-			<th>Periode</th>
-			<th colspan="3">Action</th
-		</tr>
-	</thead>
+	
 	<?php 
 	// jika tidak ada data user
 	if (sizeof($data) == 0) {
@@ -28,7 +16,20 @@
 		    $file=$l['Bulletin']['cover'];
 			$path=  $this->webroot.'app/webroot/files/bulletin/cover/'.$directory.'/'.$file ;
 
+			if ($this->Session->check('user')) {
+
 	?>
+
+	<thead>
+		<tr>
+			<th>Judul</th>
+			<th>Cover</th>
+			<th>Keterangan</th>
+			<th>Harga</th>
+			<th>Periode</th>
+			<th colspan="3">Action</th
+		</tr>
+	</thead>
 	
 	<td><?php echo $l['Bulletin']['judul']; ?></td>
 	<td><img width="200px" height="200px" src="<?php echo $path; ?>"></td>
@@ -47,6 +48,28 @@
 									array('controller' => 'buybulletins', 'action'=>'beli', $l['Bulletin']['id'])); ?>">
 						Beli</a></td>
 	</tr>
+	<?php
+
+			  }
+			  else
+			  {
+			  ?>
+			  <div class="large-4 small-6 columns">
+              <img width="200px" height="200px" src="<?php echo $path; ?>">
+
+              <div class="panel">
+                <h5><?php echo $l['Bulletin']['judul']; ?></h5>
+                <h6 class="subheader">Harga : <?php echo $l['Bulletin']['harga']; ?></h6>
+                <class="subheader"><?php echo $l['Bulletin']['keterangan']; ?><br><br>
+                <class="subheader">Periode : <?php echo $l['Bulletin']['periode']; ?>
+                <h6 class="class='button secondary"><a href="<?php echo $this->Html->url(
+									array('controller' => 'buybulletins', 'action'=>'beli', $l['Bulletin']['id'])); ?>">
+						Beli</a></h6>
+              </div>
+            </div>
+    <?php
+		  }
+	?>
 	<?php
 		endforeach;
 	}

@@ -14,7 +14,7 @@ if ($nmcontroller == 'books' || $nmcontroller == 'Books' ||$nmcontroller == 'Buy
     $facilityactive = 1;
     $bookactive = 0;
     $activityactive=0;
-} else if ($nmcontroller == 'Activities') {
+} else if ($nmcontroller == 'Activities' || $nmcontroller == 'activities'|| $nmcontroller == 'Participants') {
     $activityactive = 1;
     $facilityactive = 0;
     $bookactive = 0;
@@ -48,7 +48,12 @@ if ($nmcontroller == 'books' || $nmcontroller == 'Books' ||$nmcontroller == 'Buy
 
 
     <style>
+        .large.icon-grid li {
+            display: inline-block;
+            text-align: center;
 
+            font-size: 2em;
+        }
 
 
         #EventStartMonth, #EventStartDay, #EventStartYear,#EventStartHour,#EventStartMin,#EventStartMeridian{
@@ -66,6 +71,10 @@ if ($nmcontroller == 'books' || $nmcontroller == 'Books' ||$nmcontroller == 'Buy
             width: 15%;
         }
 
+        table img{
+            width:100px;
+            height:100px;
+        }
 
     </style>
 </head>

@@ -4,8 +4,8 @@
     <list default="true" id="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" name="Default" comment="" />
     <ignored path="kplpps.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/ActivitiesController.php" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1382503264001" ignored="false" />
-    <file path="/index.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1382503102071" ignored="false" />
+    <file path="/ActivitiesController.php" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384650707173" ignored="false" />
+    <file path="/index.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384655408931" ignored="false" />
     <file path="/ListsController.php" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1380347802668" ignored="false" />
     <file path="/Activity.php" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1380956628441" ignored="false" />
     <file path="/add.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384199525275" ignored="false" />
@@ -15,11 +15,24 @@
     <file path="/detail.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384197924343" ignored="false" />
     <file path="$PROJECT_DIR$/../KP/app/Plugin/FullCalendar/View/Events/index.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1380956589692" ignored="false" />
     <file path="$PROJECT_DIR$/../KP/app/View/Elements/sidebar.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1381075822923" ignored="false" />
-    <file path="/index_user.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1382503389028" ignored="false" />
+    <file path="/index_user.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384589841158" ignored="false" />
     <file path="$PROJECT_DIR$/app/tmp/cache/cake_toolbar_cache51b45a0b0168cd1c8834addf2b7eabad" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1382504613944" ignored="false" />
     <file path="$PROJECT_DIR$/app/tmp/logs/error.log" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1382504613944" ignored="false" />
     <file path="/participant_list.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384199760797" ignored="false" />
-    <file path="/ParticipantsController.php" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384486155883" ignored="false" />
+    <file path="/utama.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384589153834" ignored="false" />
+    <file path="/index_User.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384590470998" ignored="false" />
+    <file path="/detail_fasilitas.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384590576036" ignored="false" />
+    <file path="/UsersController.php" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384621006653" ignored="false" />
+    <file path="/AppController.php" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384619967157" ignored="false" />
+    <file path="/navigasiUser.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384655852373" ignored="false" />
+    <file path="/footer.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384591949184" ignored="false" />
+    <file path="/FacilitiesController.php" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384651809483" ignored="false" />
+    <file path="/User.php" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384594046414" ignored="false" />
+    <file path="/navigasi.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384615045207" ignored="false" />
+    <file path="/login.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384621331390" ignored="false" />
+    <file path="/facility.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384650940155" ignored="false" />
+    <file path="/ParticipantsController.php" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384653516822" ignored="false" />
+    <file path="/BooksController.php" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384654782839" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,91 +52,95 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="edit.ctp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/View/Activities/edit.ctp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="30" selection-start="30" selection-end="30" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ActivitiesController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Controller/ActivitiesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="12" selection-start="807" selection-end="807" vertical-scroll-proportion="-17.0">
+            <state line="11" column="10" selection-start="307" selection-end="307" vertical-scroll-proportion="-7.1923075">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ParticipantsController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Controller/ParticipantsController.php">
+      <file leaf-file-name="navigasiUser.ctp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/View/Elements/navigasiUser.ctp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="64" selection-start="548" selection-end="548" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="add.ctp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/View/Participants/add.ctp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="23" selection-start="23" selection-end="23" vertical-scroll-proportion="-0.0">
+            <state line="4" column="33" selection-start="20" selection-end="54" vertical-scroll-proportion="-2.6153846">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.ctp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/View/Activities/index.ctp">
+        <entry file="file://$PROJECT_DIR$/app/View/materials/index.ctp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="27" selection-start="0" selection-end="27" vertical-scroll-proportion="0.0">
+            <state line="38" column="11" selection-start="995" selection-end="995" vertical-scroll-proportion="-11.769231">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="participant_list.ctp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/View/Participants/participant_list.ctp">
+      <file leaf-file-name="UsersController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Controller/UsersController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="27" selection-start="27" selection-end="27" vertical-scroll-proportion="0.0">
+            <state line="52" column="55" selection-start="1876" selection-end="1876" vertical-scroll-proportion="-16.346153">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index_user.ctp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/View/Activities/index_user.ctp">
+      <file leaf-file-name="BooksController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Controller/BooksController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="26" selection-start="637" selection-end="637" vertical-scroll-proportion="0.0">
+            <state line="14" column="0" selection-start="478" selection-end="590" vertical-scroll-proportion="-7.1923075">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BuysController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Controller/BuysController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="49" column="69" selection-start="1684" selection-end="1684" vertical-scroll-proportion="-13.076923">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.ctp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/View/Facilities/index.ctp">
+        <entry file="file://$PROJECT_DIR$/app/View/books/index.ctp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="19" column="11" selection-start="534" selection-end="534" vertical-scroll-proportion="-5.6666665">
+              <folding>
+                <element signature="e#118#259#0" expanded="false" />
+                <marker date="1384655442550" expanded="true" signature="941:1063" placeholder="..." />
+                <marker date="1384655442550" expanded="true" signature="948:961" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.ctp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/View/bulletins/index.ctp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="51" column="0" selection-start="1551" selection-end="1551" vertical-scroll-proportion="-9.807693">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FacilitiesController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Controller/FacilitiesController.php">
+      <file leaf-file-name="routes.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Config/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="51" selection-start="502" selection-end="502" vertical-scroll-proportion="0.0">
+            <state line="28" column="56" selection-start="1158" selection-end="1158" vertical-scroll-proportion="0.23242188">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="detail.ctp" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/View/Activities/detail.ctp">
+      <file leaf-file-name="AppController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Controller/AppController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="0" selection-start="1447" selection-end="1447" vertical-scroll-proportion="0.8011696">
+            <state line="56" column="5" selection-start="1780" selection-end="1780" vertical-scroll-proportion="-5.9615383">
               <folding />
             </state>
           </provider>
@@ -139,22 +156,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/Controller/AppController.php" />
-        <option value="$PROJECT_DIR$/app/Config/facebook.php" />
-        <option value="$PROJECT_DIR$/app/Config/twitter.php" />
-        <option value="$PROJECT_DIR$/app/Config/database.php" />
-        <option value="$PROJECT_DIR$/app/View/Elements/navigasi.ctp" />
-        <option value="$PROJECT_DIR$/app/View/Activities/add.ctp" />
+        <option value="$PROJECT_DIR$/app/View/Facilities/index.ctp" />
         <option value="$PROJECT_DIR$/app/View/Activities/index.ctp" />
-        <option value="$PROJECT_DIR$/app/View/Activities/index_user.ctp" />
-        <option value="$PROJECT_DIR$/app/Model/Activity.php" />
-        <option value="$PROJECT_DIR$/app/View/Elements/sidebarActivities.ctp" />
-        <option value="$PROJECT_DIR$/app/View/Activities/edit.ctp" />
-        <option value="$PROJECT_DIR$/app/View/Participants/add.ctp" />
-        <option value="$PROJECT_DIR$/app/View/Participants/participant_list.ctp" />
+        <option value="$PROJECT_DIR$/app/View/Layouts/utama.ctp" />
         <option value="$PROJECT_DIR$/app/Controller/ParticipantsController.php" />
+        <option value="$PROJECT_DIR$/app/View/Layouts/facility.ctp" />
+        <option value="$PROJECT_DIR$/app/Controller/BooksController.php" />
+        <option value="$PROJECT_DIR$/app/Controller/FacilitiesController.php" />
         <option value="$PROJECT_DIR$/app/Controller/ActivitiesController.php" />
-        <option value="$PROJECT_DIR$/app/View/Activities/detail.ctp" />
+        <option value="$PROJECT_DIR$/app/Controller/BuysController.php" />
+        <option value="$PROJECT_DIR$/app/View/books/index.ctp" />
+        <option value="$PROJECT_DIR$/app/Controller/AppController.php" />
+        <option value="$PROJECT_DIR$/app/View/Elements/navigasiUser.ctp" />
+        <option value="$PROJECT_DIR$/app/View/materials/index.ctp" />
+        <option value="$PROJECT_DIR$/app/View/bulletins/index.ctp" />
+        <option value="$PROJECT_DIR$/app/Controller/UsersController.php" />
+        <option value="$PROJECT_DIR$/app/Config/routes.php" />
       </list>
     </option>
   </component>
@@ -162,7 +179,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1376" />
+    <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -191,6 +208,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -238,6 +256,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="webroot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kplpps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lpps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webroot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -340,6 +380,28 @@
               <option name="myItemId" value="View" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kplpps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lpps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -360,6 +422,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Participants" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kplpps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lpps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="materials" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -403,7 +487,51 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="FullCalendar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kplpps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lpps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Facilities" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kplpps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lpps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Events" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -447,7 +575,69 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="bulletins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kplpps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lpps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="books" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kplpps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lpps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Activities" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kplpps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lpps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -489,17 +679,16 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/htdocs/latihan/latihan" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -541,17 +730,17 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1376" height="744" extended-state="0" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35692543" sideWeight="0.67235494" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3628788" sideWeight="0.6735043" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32764506" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32649574" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -624,102 +813,118 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Model/Activity.php">
+    <entry file="file://$PROJECT_DIR$/app/View/Layouts/facility.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="54" selection-start="767" selection-end="767" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Model/Bulletin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/View/Facilities/lihat.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="6" selection-start="619" selection-end="619" vertical-scroll-proportion="0.6023392" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/View/Activities/add.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="2" selection-start="2247" selection-end="2247" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/View/Layouts/utama.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.346" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/View/Elements/sidebarActivities.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="735" selection-end="735" vertical-scroll-proportion="0.578" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/View/Activities/index.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="27" selection-start="0" selection-end="27" vertical-scroll-proportion="-0.0">
+        <state line="44" column="0" selection-start="1117" selection-end="1117" vertical-scroll-proportion="-2.8461537">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/View/Activities/edit.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="30" selection-start="30" selection-end="30" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Controller/ParticipantsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="64" selection-start="548" selection-end="548" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Controller/FacilitiesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="51" selection-start="502" selection-end="502" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/View/Facilities/index.ctp">
+    <entry file="file://$PROJECT_DIR$/app/View/Elements/sidebarBooks.ctp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/View/Participants/participant_list.ctp">
+    <entry file="file://$PROJECT_DIR$/app/Controller/MaterialsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="27" selection-start="27" selection-end="27" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/View/Activities/index_user.ctp">
+    <entry file="file://$PROJECT_DIR$/app/Model/Book.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="26" selection-start="637" selection-end="637" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Controller/FacilitiesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="69" selection-start="1207" selection-end="1268" vertical-scroll-proportion="-15.692307">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Controller/BulletinsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Controller/BuysController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="69" selection-start="1684" selection-end="1684" vertical-scroll-proportion="-13.076923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Controller/BooksController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="478" selection-end="590" vertical-scroll-proportion="-7.1923075">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Controller/ActivitiesController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="12" selection-start="807" selection-end="807" vertical-scroll-proportion="-17.0">
+        <state line="11" column="10" selection-start="307" selection-end="307" vertical-scroll-proportion="-7.1923075">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/View/Participants/add.ctp">
+    <entry file="file://$PROJECT_DIR$/app/View/books/index.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="23" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0">
+        <state line="19" column="11" selection-start="534" selection-end="534" vertical-scroll-proportion="-5.6666665">
+          <folding>
+            <element signature="e#118#259#0" expanded="false" />
+            <marker date="1384655442550" expanded="true" signature="941:1063" placeholder="..." />
+            <marker date="1384655442550" expanded="true" signature="948:961" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/View/Elements/navigasiUser.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="33" selection-start="20" selection-end="54" vertical-scroll-proportion="-2.6153846">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/View/Activities/detail.ctp">
+    <entry file="file://$PROJECT_DIR$/app/View/materials/index.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="1447" selection-end="1447" vertical-scroll-proportion="0.8011696">
+        <state line="38" column="11" selection-start="995" selection-end="995" vertical-scroll-proportion="-11.769231">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/View/bulletins/index.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="0" selection-start="1551" selection-end="1551" vertical-scroll-proportion="-9.807693">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Controller/AppController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="5" selection-start="1780" selection-end="1780" vertical-scroll-proportion="-5.9615383">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Controller/UsersController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="55" selection-start="1876" selection-end="1876" vertical-scroll-proportion="-16.346153">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Config/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="56" selection-start="1158" selection-end="1158" vertical-scroll-proportion="0.23242188">
           <folding />
         </state>
       </provider>

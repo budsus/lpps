@@ -13,7 +13,9 @@
             <li><a href="<?php echo $this->Html->url(
                     array('controller'=>'Facilities',
                         'action' => 'index')); ?>">Fasilitas</a></li>
-            <li><a href="#">Section 4</a></li>
+            <li><a href="<?php echo $this->Html->url(array('controller'=>'Users', 'action'=>'logout')); ?>">
+                    <i class="icon-off"></i> Logout
+                </a></li>
         </ul>
     </div>
 </div>

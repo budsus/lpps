@@ -8,7 +8,9 @@
         <th>Penyelenggaraan</th>
         <th></th>
     </tr>
-    <?php foreach($activities as $activity): ?>
+    <?php
+
+    foreach($activities as $activity): ?>
         <tr>
             <td><h3><?php
                 echo $this->Html->link($activity['Activity']['nama_kegiatan'],
@@ -20,7 +22,9 @@
                         'action'=>'add',
                         $activity['Activity']['id'])); ?>"><button>Daftar Sebagai Peserta</button></a><br /><br /></td>
         </tr>
-    <?php endforeach ?>
+    <?php endforeach; ?>
+
+
 
 </table>
 
