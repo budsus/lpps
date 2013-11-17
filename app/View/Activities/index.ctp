@@ -1,4 +1,5 @@
-<?php if($this->Session->check('user')) { ?>
+<?php echo $this->Session->flash();
+if($this->Session->check('user')) { ?>
 <div class="row">
     <div class="large-12 columns" >
 <h2>Informasi Kegiatan</h2>

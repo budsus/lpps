@@ -22,31 +22,25 @@
         'action'=>'add',
         $post['Activity']['id'])); ?>"><button>Daftar Sebagai Peserta</button></a><br /><br />
 <?php
-echo $this->Html->link('Download Brosur',array('action' => 'download', $post['Activity']['id']));
+    $brosur = $post['Activity']['brosur'];
+if($brosur){
+    echo $this->Html->link('Download Brosur',array('action' => 'download', $post['Activity']['id']));
+}
+else
+{
+    echo 'Brosur tidak tersedia';
+}
 ?><br />
 <h3>Poster</h3>
 <?php
-
     $directory=$post['Activity']['poster_dir'];
-
     $file=$post['Activity']['poster'];
     $path=  $this->webroot.'app/webroot/files/activity/poster/'.$directory.'/'.$file ;
-?>
-<a href="<?php echo $path;?>"><img src="<?php echo $path;?>"></a></li>
-<?php
+    if(!$file)
+    {
+        echo 'Tidak ada poster';
+    }
+    else{?>
 
-$this->Facebook->share(
-    'http://www.google.com');
-//array('controller' => 'activities', 'action' => 'detail', $activity['Activity']['id'])));
-?>
-
-<!--<a href="#"
-   onclick="
-    window.open(
-      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
-      'facebook-share-dialog',
-      'width=626,height=436');
-    return false;">
-    Share on Facebook
-</a ><br /> <br/> -->
-
+        <a href="<?php echo $path;?>"><img src="<?php echo $path;?>"></a></li>
+<?php } ?>
