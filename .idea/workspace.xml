@@ -4,6 +4,15 @@
     <list default="true" id="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" name="Default" comment="" />
     <ignored path="kplpps.iws" />
     <ignored path=".idea/workspace.xml" />
+<<<<<<< HEAD
+    <file path="/ActivitiesController.php" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1382503264001" ignored="false" />
+    <file path="/index.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384717999139" ignored="false" />
+    <file path="/ListsController.php" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1380347802668" ignored="false" />
+    <file path="/Activity.php" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1380956628441" ignored="false" />
+    <file path="/add.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384199525275" ignored="false" />
+    <file path="/edit.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384712534840" ignored="false" />
+    <file path="/delete.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1380597945460" ignored="false" />
+=======
     <file path="/ActivitiesController.php" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384665226444" ignored="false" />
     <file path="/index.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384660115415" ignored="false" />
     <file path="/ListsController.php" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1380347802668" ignored="false" />
@@ -11,9 +20,69 @@
     <file path="/add.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384199525275" ignored="false" />
     <file path="/edit.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384668202780" ignored="false" />
     <file path="/delete.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384667365179" ignored="false" />
+>>>>>>> 43ddbd756c43477afe6e085b7baf3ba6234f2c8f
     <file path="/bootstrap.php" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1380618055443" ignored="false" />
     <file path="/detail.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384701800780" ignored="false" />
     <file path="$PROJECT_DIR$/../KP/app/Plugin/FullCalendar/View/Events/index.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1380956589692" ignored="false" />
+<<<<<<< HEAD
+    <file path="$PROJECT_DIR$/../KP/app/View/Elements/sidebar.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384699770071" ignored="false" />
+    <file path="/index_user.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384716676245" ignored="false" />
+    <file path="$PROJECT_DIR$/app/tmp/cache/cake_toolbar_cache51b45a0b0168cd1c8834addf2b7eabad" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1382504613944" ignored="false" />
+    <file path="$PROJECT_DIR$/app/tmp/logs/error.log" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1382504613944" ignored="false" />
+    <file path="/participant_list.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384199760797" ignored="false" />
+    <file path="/ParticipantsController.php" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384486155883" ignored="false" />
+    <file path="$PROJECT_DIR$/../KP/app/Controller/ProfilesController.php" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384621552758" ignored="false" />
+    <file path="/ProfilesController.php" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384621549725" ignored="false" />
+    <file path="$PROJECT_DIR$/../KP/app/View/Profiles/index_user.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384718526306" ignored="false" />
+    <file path="$PROJECT_DIR$/../KP/app/View/Elements/footeruser.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384620795502" ignored="false" />
+    <file path="$PROJECT_DIR$/../KP/app/View/Elements/isi.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384620810803" ignored="false" />
+    <file path="$PROJECT_DIR$/../KP/app/View/Layouts/utamauser.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384620859407" ignored="false" />
+    <file path="$PROJECT_DIR$/../KP/app/Controller/GkisController.php" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384621705748" ignored="false" />
+    <file path="/GkisController.php" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384621691381" ignored="false" />
+    <file path="$PROJECT_DIR$/../KP/app/Controller/GkjsController.php" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384621842258" ignored="false" />
+    <file path="/GkjsController.php" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384621832815" ignored="false" />
+    <file path="$PROJECT_DIR$/../KP/app/Controller/PengurusesController.php" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384621864707" ignored="false" />
+    <file path="/PengurusesController.php" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384621855739" ignored="false" />
+    <file path="$PROJECT_DIR$/../KP/app/Controller/StaffsController.php" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384621893322" ignored="false" />
+    <file path="/StaffsController.php" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384621892508" ignored="false" />
+    <file path="$PROJECT_DIR$/../KP/app/View/Gkis/index_user.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384718499979" ignored="false" />
+    <file path="$PROJECT_DIR$/../KP/app/View/Gkjs/index_user.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384718506051" ignored="false" />
+    <file path="$PROJECT_DIR$/../KP/app/View/Penguruses/index_user.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384718516589" ignored="false" />
+    <file path="$PROJECT_DIR$/../KP/app/View/Staffs/index_user.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384718534365" ignored="false" />
+    <file path="$PROJECT_DIR$/../KP/app/Controller/GalerifotosController.php" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384689666474" ignored="false" />
+    <file path="/GalerifotosController.php" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384689570605" ignored="false" />
+    <file path="$PROJECT_DIR$/../KP/app/Model/Galery.php" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384689368967" ignored="false" />
+    <file path="$PROJECT_DIR$/../KP/app/View/Galerifotos/index.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384690433246" ignored="false" />
+    <file path="$PROJECT_DIR$/../KP/app/Model/Galerifoto.php" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384699885636" ignored="false" />
+    <file path="/Galerifoto.php" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384698555494" ignored="false" />
+    <file path="$PROJECT_DIR$/../KP/app/Controller/FoldersController.php" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384698516276" ignored="false" />
+    <file path="/FoldersController.php" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384698515572" ignored="false" />
+    <file path="$PROJECT_DIR$/../KP/app/Model/Folder.php" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384698114180" ignored="false" />
+    <file path="/Folder.php" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384697961627" ignored="false" />
+    <file path="$PROJECT_DIR$/../KP/app/View/Folders/index.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384698844370" ignored="false" />
+    <file path="$PROJECT_DIR$/../KP/app/tmp/cache/persistent/myapp_cake_core_file_map" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384745943873" ignored="false" />
+    <file path="$PROJECT_DIR$/../KP/app/Plugin/Upload/Model/Behavior/UploadBehavior.php" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384699399882" ignored="false" />
+    <file path="$PROJECT_DIR$/../KP/app/Controller/AlbumsController.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384699601668" ignored="false" />
+    <file path="$PROJECT_DIR$/../KP/app/Controller/AlbumsController.php" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384716762758" ignored="false" />
+    <file path="/AlbumsController.php" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384716718061" ignored="false" />
+    <file path="$PROJECT_DIR$/../KP/app/Model/Album.php" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384699747905" ignored="false" />
+    <file path="/Album.php" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384699747905" ignored="false" />
+    <file path="$PROJECT_DIR$/../KP/app/View/Albums/index.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384716556986" ignored="false" />
+    <file path="$PROJECT_DIR$/../KP/app/View/Albums/tambah.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384714326281" ignored="false" />
+    <file path="/tambah.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384714326281" ignored="false" />
+    <file path="$PROJECT_DIR$/../KP/app/View/Albums/lihat.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384711984417" ignored="false" />
+    <file path="/lihat.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384711984417" ignored="false" />
+    <file path="$PROJECT_DIR$/../KP/app/View/Albums/edit.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384712555238" ignored="false" />
+    <file path="$PROJECT_DIR$/../KP/app/View/Albums/upload.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384713096672" ignored="false" />
+    <file path="/upload.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384713096273" ignored="false" />
+    <file path="$PROJECT_DIR$/../KP/app/View/Albums/hapus.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384713296384" ignored="false" />
+    <file path="$PROJECT_DIR$/../KP/app/View/Albums/index_user.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384718457925" ignored="false" />
+    <file path="$PROJECT_DIR$/../KP/app/View/Albums/lihat_user.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384717309759" ignored="false" />
+    <file path="/lihat_user.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384717281741" ignored="false" />
+    <file path="$PROJECT_DIR$/../KP/app/View/Profiles/index.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384718319145" ignored="false" />
+    <file path="$PROJECT_DIR$/../KP/app/View/Profiles/edit.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384718156775" ignored="false" />
+    <file path="$PROJECT_DIR$/../KP/app/View/Profiles/tampil.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384718131643" ignored="false" />
+=======
     <file path="$PROJECT_DIR$/../KP/app/View/Elements/sidebar.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1381075822923" ignored="false" />
     <file path="/index_user.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384589841158" ignored="false" />
     <file path="$PROJECT_DIR$/app/tmp/cache/cake_toolbar_cache51b45a0b0168cd1c8834addf2b7eabad" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1382504613944" ignored="false" />
@@ -35,6 +104,7 @@
     <file path="/BooksController.php" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384654782839" ignored="false" />
     <file path="/sidebarBooks.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384659930803" ignored="false" />
     <file path="$PROJECT_DIR$/../lpps1/app/Controller/ParticipantsController.php" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384665776887" ignored="false" />
+>>>>>>> 43ddbd756c43477afe6e085b7baf3ba6234f2c8f
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,64 +124,134 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+<<<<<<< HEAD
+      <file leaf-file-name="FacilitiesController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Controller/FacilitiesController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="34" selection-start="362" selection-end="362" vertical-scroll-proportion="-7.04">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Facility.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Model/Facility.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="33" selection-start="0" selection-end="801" vertical-scroll-proportion="-9.6">
+=======
       <file leaf-file-name="ActivitiesController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Controller/ActivitiesController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="101" column="24" selection-start="3062" selection-end="3062" vertical-scroll-proportion="-0.65384614">
+>>>>>>> 43ddbd756c43477afe6e085b7baf3ba6234f2c8f
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ParticipantsController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Controller/ParticipantsController.php">
+      <file leaf-file-name="tambah.ctp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/View/Facilities/tambah.ctp">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state line="66" column="7" selection-start="0" selection-end="2560" vertical-scroll-proportion="-24.0">
+=======
             <state line="67" column="72" selection-start="2329" selection-end="2329" vertical-scroll-proportion="-43.807693">
+>>>>>>> 43ddbd756c43477afe6e085b7baf3ba6234f2c8f
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+      <file leaf-file-name="Galery.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Model/Galery.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="52" selection-start="229" selection-end="229" vertical-scroll-proportion="-5.12">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.ctp" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/View/Facilities/index.ctp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="31" selection-start="401" selection-end="401" vertical-scroll-proportion="0.40083507">
+=======
       <file leaf-file-name="add.ctp" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/View/Participants/add.ctp">
           <provider selected="true" editor-type-id="text-editor">
             <state line="3" column="39" selection-start="75" selection-end="75" vertical-scroll-proportion="0.102">
+>>>>>>> 43ddbd756c43477afe6e085b7baf3ba6234f2c8f
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="participant_list.ctp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/View/Participants/participant_list.ctp">
+      <file leaf-file-name="UploadBehavior.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Plugin/Upload/Model/Behavior/UploadBehavior.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state line="168" column="16" selection-start="4540" selection-end="4540" vertical-scroll-proportion="-6.38">
+=======
             <state line="29" column="10" selection-start="860" selection-end="860" vertical-scroll-proportion="-2.6153846">
+>>>>>>> 43ddbd756c43477afe6e085b7baf3ba6234f2c8f
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+      <file leaf-file-name="lihat.ctp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/View/Facilities/lihat.ctp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="44" selection-start="408" selection-end="408" vertical-scroll-proportion="-11.52">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit.ctp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/View/Facilities/edit.ctp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="25" selection-start="1089" selection-end="1089" vertical-scroll-proportion="-12.8">
+=======
       <file leaf-file-name="detail.ctp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/View/Activities/detail.ctp">
           <provider selected="true" editor-type-id="text-editor">
             <state line="30" column="33" selection-start="1268" selection-end="1268" vertical-scroll-proportion="-9.076923">
+>>>>>>> 43ddbd756c43477afe6e085b7baf3ba6234f2c8f
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+      <file leaf-file-name="upload.ctp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/View/Facilities/upload.ctp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="9" selection-start="520" selection-end="520" vertical-scroll-proportion="-5.12">
+=======
       <file leaf-file-name="edit.ctp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/View/Activities/edit.ctp">
           <provider selected="true" editor-type-id="text-editor">
             <state line="2" column="61" selection-start="102" selection-end="102" vertical-scroll-proportion="0.0">
+>>>>>>> 43ddbd756c43477afe6e085b7baf3ba6234f2c8f
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+      <file leaf-file-name="upload.ctp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/View/Galeries/upload.ctp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="33" selection-start="357" selection-end="357" vertical-scroll-proportion="-3.2">
+=======
       <file leaf-file-name="edit.ctp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/View/Participants/edit.ctp">
           <provider selected="true" editor-type-id="text-editor">
             <state line="5" column="49" selection-start="262" selection-end="262" vertical-scroll-proportion="0.0">
+>>>>>>> 43ddbd756c43477afe6e085b7baf3ba6234f2c8f
               <folding />
             </state>
           </provider>
@@ -127,6 +267,12 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/app/Controller/AppController.php" />
+        <option value="$PROJECT_DIR$/app/Config/facebook.php" />
+        <option value="$PROJECT_DIR$/app/Config/twitter.php" />
+        <option value="$PROJECT_DIR$/app/View/Elements/navigasi.ctp" />
+=======
         <option value="$PROJECT_DIR$/app/View/Profiles/edit.ctp" />
         <option value="$PROJECT_DIR$/app/View/Facilities/index.ctp" />
         <option value="$PROJECT_DIR$/app/View/Layouts/facility.ctp" />
@@ -135,6 +281,7 @@
         <option value="$PROJECT_DIR$/app/View/buybulletins/index.ctp" />
         <option value="$PROJECT_DIR$/app/Controller/ActivitiesController.php" />
         <option value="$PROJECT_DIR$/app/Model/Activity.php" />
+>>>>>>> 43ddbd756c43477afe6e085b7baf3ba6234f2c8f
         <option value="$PROJECT_DIR$/app/View/Activities/add.ctp" />
         <option value="$PROJECT_DIR$/app/View/Activities/index.ctp" />
         <option value="$PROJECT_DIR$/app/View/Participants/delete.ctp" />
@@ -142,7 +289,11 @@
         <option value="$PROJECT_DIR$/app/Controller/ParticipantsController.php" />
         <option value="$PROJECT_DIR$/app/View/Participants/participant_list.ctp" />
         <option value="$PROJECT_DIR$/app/View/Activities/detail.ctp" />
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/app/Config/database.php" />
+=======
         <option value="$PROJECT_DIR$/app/View/Participants/add.ctp" />
+>>>>>>> 43ddbd756c43477afe6e085b7baf3ba6234f2c8f
       </list>
     </option>
   </component>
@@ -208,9 +359,47 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+<<<<<<< HEAD
+              <option name="myItemId" value="plugins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kplpps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lpps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kplpps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lpps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webroot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+=======
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+>>>>>>> 43ddbd756c43477afe6e085b7baf3ba6234f2c8f
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -248,7 +437,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+<<<<<<< HEAD
+              <option name="myItemId" value="Galeries" />
+=======
               <option name="myItemId" value="Participants" />
+>>>>>>> 43ddbd756c43477afe6e085b7baf3ba6234f2c8f
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -270,7 +463,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+<<<<<<< HEAD
+              <option name="myItemId" value="Facilities" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kplpps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lpps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Model" />
+=======
               <option name="myItemId" value="Activities" />
+>>>>>>> 43ddbd756c43477afe6e085b7baf3ba6234f2c8f
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -363,14 +578,18 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1376" height="744" extended-state="0" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1376" height="744" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3689394" sideWeight="0.67235494" order="0" side_tool="false" content_ui="combo" />
+=======
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38127854" sideWeight="0.6740614" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> 43ddbd756c43477afe6e085b7baf3ba6234f2c8f
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32593855" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -446,6 +665,74 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/app/View/Activities/index_user.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="47" selection-start="291" selection-end="291" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Controller/ActivitiesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="617" selection-end="617" vertical-scroll-proportion="-0.64">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="27" selection-start="2747" selection-end="2747" vertical-scroll-proportion="-9.6">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Controller/TempeventsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Controller/EventsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="186" column="47" selection-start="6260" selection-end="6260" vertical-scroll-proportion="-2.68">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Controller/FullCalendarAppController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/View/Galeries/upload.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="33" selection-start="357" selection-end="357" vertical-scroll-proportion="-3.2">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Plugin/Upload/Model/Behavior/UploadBehavior.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="168" column="16" selection-start="4540" selection-end="4540" vertical-scroll-proportion="-6.38">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Controller/FacilitiesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="34" selection-start="362" selection-end="362" vertical-scroll-proportion="-7.04">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Model/Galery.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="52" selection-start="229" selection-end="229" vertical-scroll-proportion="-5.12">
+=======
     <entry file="file://$PROJECT_DIR$/app/Controller/ProfilesController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -494,48 +781,85 @@
     <entry file="file://$PROJECT_DIR$/app/View/Activities/edit.ctp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="61" selection-start="102" selection-end="102" vertical-scroll-proportion="0.0">
+>>>>>>> 43ddbd756c43477afe6e085b7baf3ba6234f2c8f
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/app/Model/Facility.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="33" selection-start="0" selection-end="801" vertical-scroll-proportion="-9.6">
+=======
     <entry file="file://$PROJECT_DIR$/app/View/Participants/edit.ctp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="49" selection-start="262" selection-end="262" vertical-scroll-proportion="0.0">
+>>>>>>> 43ddbd756c43477afe6e085b7baf3ba6234f2c8f
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/app/View/Facilities/tambah.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="7" selection-start="0" selection-end="2560" vertical-scroll-proportion="-24.0">
+=======
     <entry file="file://$PROJECT_DIR$/app/Controller/ActivitiesController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="101" column="24" selection-start="3062" selection-end="3062" vertical-scroll-proportion="-0.65384614">
+>>>>>>> 43ddbd756c43477afe6e085b7baf3ba6234f2c8f
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/app/View/Facilities/upload.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="9" selection-start="520" selection-end="520" vertical-scroll-proportion="-5.12">
+=======
     <entry file="file://$PROJECT_DIR$/app/View/Activities/detail.ctp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="33" selection-start="1268" selection-end="1268" vertical-scroll-proportion="-9.076923">
+>>>>>>> 43ddbd756c43477afe6e085b7baf3ba6234f2c8f
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/app/View/Facilities/lihat.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="44" selection-start="408" selection-end="408" vertical-scroll-proportion="-11.52">
+=======
     <entry file="file://$PROJECT_DIR$/app/View/Participants/participant_list.ctp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="10" selection-start="860" selection-end="860" vertical-scroll-proportion="-2.6153846">
+>>>>>>> 43ddbd756c43477afe6e085b7baf3ba6234f2c8f
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/app/View/Facilities/edit.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="25" selection-start="1089" selection-end="1089" vertical-scroll-proportion="-12.8">
+=======
     <entry file="file://$PROJECT_DIR$/app/Controller/ParticipantsController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="67" column="72" selection-start="2329" selection-end="2329" vertical-scroll-proportion="-43.807693">
+>>>>>>> 43ddbd756c43477afe6e085b7baf3ba6234f2c8f
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/app/View/Facilities/index.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="31" selection-start="401" selection-end="401" vertical-scroll-proportion="0.40083507">
+=======
     <entry file="file://$PROJECT_DIR$/app/View/Participants/add.ctp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="39" selection-start="75" selection-end="75" vertical-scroll-proportion="0.102">
+>>>>>>> 43ddbd756c43477afe6e085b7baf3ba6234f2c8f
           <folding />
         </state>
       </provider>
