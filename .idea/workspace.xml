@@ -8,7 +8,7 @@
     <file path="/index.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384660115415" ignored="false" />
     <file path="/ListsController.php" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1380347802668" ignored="false" />
     <file path="/Activity.php" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1380956628441" ignored="false" />
-    <file path="/add.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384199525275" ignored="false" />
+    <file path="/add.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384663918625" ignored="false" />
     <file path="/edit.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1384197066502" ignored="false" />
     <file path="/delete.ctp" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1380597945460" ignored="false" />
     <file path="/bootstrap.php" changelist="2f8a467e-e40f-4dad-9825-5948e3bc6ae4" time="1380618055443" ignored="false" />
@@ -53,19 +53,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="utama.ctp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/View/Layouts/utama.ctp">
+      <file leaf-file-name="facility.ctp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/View/Layouts/facility.ctp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="62" selection-start="577" selection-end="577" vertical-scroll-proportion="52.076923">
+            <state line="51" column="56" selection-start="1239" selection-end="1239" vertical-scroll-proportion="-7.423077">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="facility.ctp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/View/Layouts/facility.ctp">
+      <file leaf-file-name="FacilitiesController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Controller/FacilitiesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="56" selection-start="1239" selection-end="1239" vertical-scroll-proportion="-7.423077">
+            <state line="8" column="3" selection-start="214" selection-end="250" vertical-scroll-proportion="-5.230769">
               <folding />
             </state>
           </provider>
@@ -107,26 +107,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.ctp" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.ctp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/View/buybulletins/index.ctp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="31" selection-start="506" selection-end="514" vertical-scroll-proportion="0.749499">
+            <state line="28" column="31" selection-start="506" selection-end="514" vertical-scroll-proportion="-14.384615">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.ctp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/View/Profiles/index.ctp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="108" column="0" selection-start="4326" selection-end="4326" vertical-scroll-proportion="-70.61539">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProfilesController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Controller/ProfilesController.php">
+      <file leaf-file-name="participant_list.ctp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/View/Participants/participant_list.ctp">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
@@ -134,10 +125,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.ctp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/View/Facilities/index.ctp">
+      <file leaf-file-name="add.ctp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/View/Participants/add.ctp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="123" column="10" selection-start="4430" selection-end="4430" vertical-scroll-proportion="-18.62745">
+            <state line="2" column="38" selection-start="68" selection-end="68" vertical-scroll-proportion="-1.3076923">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ParticipantsController.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Controller/ParticipantsController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="39" selection-start="128" selection-end="128" vertical-scroll-proportion="0.1328125">
               <folding />
             </state>
           </provider>
@@ -153,8 +153,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/Controller/AppController.php" />
-        <option value="$PROJECT_DIR$/app/View/materials/index.ctp" />
         <option value="$PROJECT_DIR$/app/View/Profiles/index.ctp" />
         <option value="$PROJECT_DIR$/app/View/Elements/navigasiUser.ctp" />
         <option value="$PROJECT_DIR$/app/Config/routes.php" />
@@ -169,6 +167,8 @@
         <option value="$PROJECT_DIR$/app/Controller/UsersController.php" />
         <option value="$PROJECT_DIR$/app/View/Elements/sidebarBooks.ctp" />
         <option value="$PROJECT_DIR$/app/View/buybulletins/index.ctp" />
+        <option value="$PROJECT_DIR$/app/View/Participants/add.ctp" />
+        <option value="$PROJECT_DIR$/app/Controller/ParticipantsController.php" />
       </list>
     </option>
   </component>
@@ -876,39 +876,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Controller/BulletinsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="7.8461537">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/View/bulletins/index.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="16" selection-start="515" selection-end="515" vertical-scroll-proportion="-15.038462">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/View/books/index.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="16" selection-start="903" selection-end="903" vertical-scroll-proportion="-10.692307">
-          <folding>
-            <element signature="e#118#259#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/View/Elements/navigasi.ctp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="66" selection-start="377" selection-end="377" vertical-scroll-proportion="-5.230769">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Controller/FacilitiesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="235" column="78" selection-start="8397" selection-end="8397" vertical-scroll-proportion="-6.098039">
           <folding />
         </state>
       </provider>
@@ -985,7 +955,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/View/buybulletins/index.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="31" selection-start="506" selection-end="514" vertical-scroll-proportion="0.749499">
+        <state line="28" column="31" selection-start="506" selection-end="514" vertical-scroll-proportion="-14.384615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/View/Participants/participant_list.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/View/Participants/add.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="38" selection-start="68" selection-end="68" vertical-scroll-proportion="-1.3076923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Controller/FacilitiesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="3" selection-start="214" selection-end="250" vertical-scroll-proportion="-5.230769">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Controller/ParticipantsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="39" selection-start="128" selection-end="128" vertical-scroll-proportion="0.1328125">
           <folding />
         </state>
       </provider>

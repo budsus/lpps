@@ -2,7 +2,7 @@
 
 class ParticipantsController extends AppController{
     public $layout = "utama";
-
+    var $components = array('Session');
     public function add($id){
 
 

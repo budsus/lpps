@@ -1,5 +1,6 @@
-<h3>Daftar Peserta Baru</h3>
 
+<h3>Daftar Peserta Baru</h3>
+<?php echo $this->Session->flash();?>s
 <?php
 echo $this->Form->create('Participant');
 echo $this->Form->input('nama_lengkap');
