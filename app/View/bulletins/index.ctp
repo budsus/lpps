@@ -1,9 +1,15 @@
 <?php echo $this->Session->flash();?>
+
 <h6>Daftar Bulletin</h6>
 <p>&nbsp;</p>
 <table>
-	
-	<?php 
+	<?php
+    if($this->Session->check('user')) { ?>
+    <h5><button class='button secondary'><a href="<?php echo $this->Html->url(
+              array('controller'=>'bulletins',
+                    'action' => 'tambah')); ?>">Tambah Buletin</a></h5>
+
+	<?php }
 	// jika tidak ada data user
 	if (sizeof($data) == 0) {
 	?>

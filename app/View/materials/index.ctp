@@ -1,7 +1,13 @@
 <?php echo $this->Session->flash();?>
+
 <h6>Daftar Material</h6>
 <p>&nbsp;</p>
 <table>
+	<?php
+    if($this->Session->check('user')) { ?>
+     <h5><button class='button secondary'><a href="<?php echo $this->Html->url(
+              array('controller'=>'materials',
+                    'action' => 'tambah')); ?>">Tambah Materi Pembinaan</a></h5>
 	<thead>
 		<tr>
 			<th>Judul</th>
@@ -9,7 +15,7 @@
 			<th colspan="3">Action</th
 		</tr>
 	</thead>
-	<?php 
+	<?php }
 	// jika tidak ada data user
 	if (sizeof($data) == 0) {
 	?>
