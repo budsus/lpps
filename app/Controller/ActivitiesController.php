@@ -2,28 +2,41 @@
 
 class ActivitiesController extends AppController{
 
-   // var $components = array('Twitter.Twitter');
-    var $components = array('Session');
+    var $components = array('Session','Paginator');
     public $layout = "utama";
+    var $paginate = array(
+        'limit' => 10
+    );
+    public function beforeFilter(){
+        if(!$this->Session->check('user')){
+
+            $this->layout='facility';
+        }}
 
     public function index(){
         $activities = $this->Activity->find('all');
+        $activities = $this->paginate('Activity');
         //pr($activities);
         $this->set('judul', 'Informasi Kegiatan LPPS');
         $this->set('activities',$activities);
     }
 
+    //tidak terpakai
     public function index_user(){
         $activities = $this->Activity->find('all');
         //pr($activities);
-        $this->set('judul', 'Informasi Kegiatan LPPS');
+
         $this->set('activities',$activities);
     }
 
     public function add(){
+        $this->layout='facility';
         $this->set('judul', 'Tambah Kegiatan Baru');
         if($this->request->is('post')){
-            $this->Activity->save($this->request->data);
+            $this->Activity->create();
+            if($this->Activity->save($this->request->data)){
+                $this->Session->setFlash("Penambahan kegiatan baru berhasil!");
+            }
             $this->redirect('/activities');
         }
     }
@@ -53,7 +66,7 @@ class ActivitiesController extends AppController{
     }
 
     function detail($id = null) {
-        $this->set('judul', 'Detail Kegiatan');
+        $this->set('judul','Detail Kegiatan');
         if (!$id) {
             throw new NotFoundException(__('Invalid post'));
         }
@@ -67,10 +80,8 @@ class ActivitiesController extends AppController{
 
     function delete($id = null) {
         if ($id != null) {
-            if ($this->Activity->delete($id)) {
-                pr($id);
-                h($id);
-                //$this->Session->setFlash('The post with id: %s has been deleted.', h($id));
+            if ($this->Activity->delete($id,true)) {
+                $this->Session->setFlash('Data kegiatan telah dihapus.');
                 $this->redirect(array('action' => 'index'));
             } else {
                 $this->Session->setFlash("Data tidak dapat dihapus.");
@@ -97,13 +108,6 @@ class ActivitiesController extends AppController{
         pr($params['path']);
         $this->set($params);
     }
-
-
-    function connect() {
-        $this->Twitter->setupApp('YOUR_CONSUMER_KEY', 'YOUR_CONSUMER_SECRET');
-        $this->Twitter->connectApp('YOUR_CALLBAK_URL');
-    }
-
 
 }
 

@@ -1,7 +1,4 @@
 <?php echo $this->Session->flash();?>
- <h5><button class='button secondary'><a href="<?php echo $this->Html->url(
-              array('controller'=>'materials',
-                    'action' => 'tambah')); ?>">Tambah Materi Pembinaan</a></h5>
 <h6>Daftar Material</h6>
 <p>&nbsp;</p>
 <table>
@@ -26,7 +23,10 @@
 		<td><?php echo $m['Material']['judul']; ?></td>
 	<td><?php echo $m['Material']['keterangan']; ?></td>
 	
-	
+	<?php
+			  if ($this->Session->check('user')) {
+
+			  ?>
 
 	<td class='button secondary'> <a href="<?php echo $this->Html->url(
 									array('controller' => 'materials', 'action'=>'hapus', $m['Material']['id'])); ?>" onclick="return confirm('Yakin untuk dihapus?');">
@@ -34,7 +34,10 @@
 	<td class='button secondary'> <a href="<?php echo $this->Html->url(
 									array('controller' => 'materials', 'action'=>'ubah', $m['Material']['id'])); ?>">
 						Ubah</a></td>
-		
+		<?php
+
+		  }
+		  ?>
 	<td class='button secondary'><?php echo $this->Html->link('Download',array('action' => 'download',$m['Material']['id'])); ?></td>
 	</tr>
 

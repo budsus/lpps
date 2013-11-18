@@ -11,8 +11,10 @@
             <select  name="data[Staff][golongan]" class="medium">
                 <option value="">pilih golongan jabatan</option>
                 <option value="A">Manajer</option>
-                <option>This is another option too</option>
-                <option>Look, a third option</option>
+                <option value="B">Pelaksana Pembina</option>
+                <option value="C">Karyawan</option>
+                <option value="D">Emiritus</option>
+                <option value="E">Karyawan Pensiun</option>
             </select>
         </div><br><br><br><br><br>
         <div class="large-4 columns">

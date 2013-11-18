@@ -23,9 +23,9 @@
 
 <div class="actions">
     <ul>
-        <li><?php echo $this->Html->link(__('Daftar pemesanan yang sudah pasti', true), array('controller' => 'events', 'action' => 'index')); ?></li>
-        <li><?php echo $this->Html->link(__('Lihat Pemesanan', true), array('controller' => 'events', 'action' => 'add')); ?></li>
-        <li><?php echo $this->Html->link(__('Manage pemesanan', true), array('controller' => 'events', 'action' => 'index'));?></li>
+        <li><?php echo $this->Html->link(__('Daftar pemesanan', true), array('controller' => 'events', 'action' => 'index')); ?></li>
+
+
 
     </ul>
 </div>

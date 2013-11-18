@@ -1,13 +1,13 @@
 <?php
 
-class Client extends FullCalendarAppModel{
+class Client extends AppModel{
     var $name = 'Client';
     var $displayField = 'nama_depan';
-    var $hasMany = array(
+    var $hasOne = array(
         'Event' => array(
             'className' => 'FullCalendar.Event',
-            'foreignKey' => 'id',
-            'dependent' => false,
+            'foreignKey' => 'client_id',
+            'dependent' => true,
         )
     );
 
@@ -38,6 +38,10 @@ class Client extends FullCalendarAppModel{
             'notempty' => array(
                 'rule' => array('notempty'),
                 'message'=>'tidak boleh kosong'
+            ),
+            'numeric' => array(
+                'rule' => array('numeric'),
+                'message'=>'harus angka'
             ),
         ),
     );

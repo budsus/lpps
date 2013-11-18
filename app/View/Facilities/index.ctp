@@ -1,4 +1,4 @@
-<?php echo $this->Session->flash();?>
+<?php echo $this->Session->flash(); if($this->Session->check('user')) { ?>
 
 <h2>Daftar Fasilitas</h2>
 <p>&nbsp;</p>
@@ -13,7 +13,7 @@
         <th>Nama fasilitas</th>
         <th>Keterangan</th>
         <th>Biaya</th>
-        <th>Warna</th>
+
     </tr>
     </thead>
     <?php
@@ -30,7 +30,7 @@
             <tr>
                 <td style="width:100px;">
                     <div class="btn-group">
-                        <a href="#" data-dropdown="drop<?php echo $nomorid ?>" class="small secondary radius button dropdown" >Action </a><br>
+                        <a href="#" data-dropdown="drop<?php echo $nomorid ?>" class="small secondary radius button dropdown" >Opsi </a><br>
                         <ul id="drop<?php echo $nomorid ?>" data-dropdown-content class="f-dropdown">
                             <li>
                                 <a href="<?php echo $this->Html->url(
@@ -49,14 +49,7 @@
                                     Hapus
                                 </a>
                             </li>
-                            <li>
-                                <a href="<?php echo $this->Html->url(
-                                    array('controller' => 'Facilities',
-                                        'action'=>'upload',
-                                        $nomorid)); ?>" >
-                                    Tambah Foto
-                                </a>
-                            </li>
+
                             <li>
                                 <a href="<?php echo $this->Html->url(
                                     array('controller' => 'Facilities',
@@ -72,7 +65,7 @@
                 <td style="width:150px;"><?php echo $u['Facility']['nama']; ?></td>
                 <td style="width:250px;"><?php echo $u['Facility']['keterangan']; ?></td>
                 <td style="width:100px;"><?php echo $u['Facility']['biaya']; ?></td>
-                <td style="width:100px;"><?php echo $u['Facility']['color']; ?></td>
+
             </tr>
         <?php
         endforeach;
@@ -80,4 +73,60 @@
     ?>
 </table>
 
-<?php echo $this->HTML->link('Download CSV',array( "action" => "download")); ?>
+<?php } else { ?>
+
+
+
+        <?php
+
+        foreach($data as $u):
+            $nomorid=$u['Facility']['id'];
+            //pr($u['Galery']);
+
+            if(!empty($u['Galery']))
+            {
+                $directory=$u['Galery'][0]['photo_dir'];
+
+                $file=$u['Galery'][0]['photo'];
+                $path=  $this->webroot.'app/webroot/files/galery/photo/'.$directory.'/'.$file ;
+                ?>
+
+
+                <div class="large-4 columns">
+
+                    <h4> <a href="<?php echo $this->Html->url(
+                            array('controller' => 'Facilities',
+                                'action'=>'detailFasilitas',
+                                $nomorid)); ?>">
+                            <?php echo $u['Facility']['nama']; ?>
+                        </a></h4>
+                    <img class='gambardepan' src="<?php echo $path;?>">
+                    <p> <?php echo $u['Facility']['keterangan']; ?></p>
+                </div>
+            <?php }
+            else {
+
+                ?>
+
+                <div class="large-4 columns">
+
+                    <h4> <a href="<?php echo $this->Html->url(
+                            array('controller' => 'Facilities',
+                                'action'=>'detailFasilitas',
+                                $nomorid)); ?>">
+                            <?php echo $u['Facility']['nama']; ?>
+                        </a></h4>
+                    <p> <?php echo $u['Facility']['keterangan']; ?></p>
+                </div>
+            <?php }
+        endforeach;
+
+        ?>
+
+
+
+
+
+
+
+<?php }?>

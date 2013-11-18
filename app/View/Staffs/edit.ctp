@@ -15,6 +15,8 @@ echo $this->Form->input('Staff.nama',
     array('type' =>'text', 'value' => $data['Staff']['nama']));
 echo $this->Form->input('Staff.jabatan',
     array('type' =>'text', 'value' => $data['Staff']['jabatan']));
+echo $this->Form->input('Staff.email',
+    array('type' =>'text', 'value' => $data['Staff']['email']));
 
 echo $this->Form->end('Simpan');
 ?>

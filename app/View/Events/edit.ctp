@@ -12,6 +12,13 @@
 //pr($event);
 ?>
 <div class="events form">
+    <div class="actions">
+        <ul class="large icon-grid">
+
+            <li><a href="/lpps2/events" class="foundicon-left-arrow"></a></li>
+            <li><a href="/lpps2/FullCalendar" class="foundicon-calendar"></a></li>
+        </ul>
+    </div>
 <?php echo $this->Form->create('Event',array('action' => 'simpan'));?>
 	<fieldset>
 
@@ -30,19 +37,15 @@
 		echo $this->Form->input('end');
     echo $this->Form->input('all_day',array('type'=>'hidden','label'=>'sepanjang hari','value'=>'0'));
     echo $this->Form->input('status', array('options' => array(
-            'Masih pesan' => 'Masih pesan','Lunas' => 'Lunas','Uang muka' => 'Uang muka',
+            'Belum verifikasi' => 'Belum verifikasi','Sudah Verifikasi' => 'Sudah Verifikasi',
+            'Uang muka'=>'Uang muka','Lunas'=>'Lunas'
         )
         )
 			);
+    echo $this->Form->input('terbayar');
     echo $this->Form->end(__('Submit', true));
 	?>
 	</fieldset>
 
 </div>
-<div class="actions">
-	<ul>
-		<li><?php echo $this->Html->link(__('View Event', true), array( 'action' => 'view', $this->Form->value('Event.id'))); ?></li>
-		<li><?php echo $this->Html->link(__('Manage Events', true), array( 'action' => 'index'));?></li>
-		<li><li><?php echo $this->Html->link(__('View Calendar', true), array( 'controller' => 'FullCalendar')); ?></li>
-	</ul>
-</div>
+

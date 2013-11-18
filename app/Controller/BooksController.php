@@ -12,9 +12,16 @@ class  BooksController extends AppController {
                             'Book.judul' => 'asc'
                         )
                     );
+public function beforeFilter(){
+    if(!$this->Session->check('user')){
 
+        $this->layout='facility';
+    }
+}
    function index() {
-        $data = $this->paginate('Book');
+
+
+       $data = $this->paginate('Book');
         $this->set('data', $data);
         $this->set('judul', 'Daftar Buku LPPS');
 

@@ -5,19 +5,28 @@
 $nmcontroller = $this->params['controller'];
 $bookactive = "";
 $facilityactive = "";
+$profileactive = "";
 $activityactive = "";
 if ($nmcontroller == 'books' || $nmcontroller == 'Books' ||$nmcontroller == 'Buys' ||$nmcontroller == 'buys'|| $nmcontroller == 'Bulletins' || $nmcontroller == 'Materials'|| $nmcontroller == 'bulletins' ) {
     $bookactive = 1;
     $facilityactive = 0;
     $activityactive=0;
-} else if ($nmcontroller == 'Facilities') {
+    $profileactive=0;
+} else if ($nmcontroller == 'Facilities' ||$nmcontroller == 'facilities' ) {
     $facilityactive = 1;
     $bookactive = 0;
     $activityactive=0;
-} else if ($nmcontroller == 'Activities') {
+    $profileactive=0;
+} else if ($nmcontroller == 'Activities' || $nmcontroller == 'activities'|| $nmcontroller == 'Participants') {
     $activityactive = 1;
     $facilityactive = 0;
     $bookactive = 0;
+    $profileactive=0;
+}else{
+    $profileactive=1;
+    $facilityactive = 0;
+    $bookactive = 0;
+    $activityactive=0;
 }
 ?>
 
@@ -48,7 +57,12 @@ if ($nmcontroller == 'books' || $nmcontroller == 'Books' ||$nmcontroller == 'Buy
 
 
     <style>
+        .large.icon-grid li {
+            display: inline-block;
+            text-align: center;
 
+            font-size: 2em;
+        }
 
 
         #EventStartMonth, #EventStartDay, #EventStartYear,#EventStartHour,#EventStartMin,#EventStartMeridian{
@@ -66,6 +80,10 @@ if ($nmcontroller == 'books' || $nmcontroller == 'Books' ||$nmcontroller == 'Buy
             width: 15%;
         }
 
+        table img{
+            width:100px;
+            height:100px;
+        }
 
     </style>
 </head>
@@ -80,8 +98,10 @@ if($bookactive==1)
 echo $this->element('sidebarBooks');
 else if($activityactive==1)
     echo $this->element('sidebarActivities');
-else
+else if($facilityactive==1)
     echo $this->element('sidebarFacilities');
+else
+    echo $this->element('sidebarProfil');
 
 ?>
 
