@@ -12,7 +12,9 @@ echo $this->Form->create('Profile', array('action' => 'simpan', 'type' => 'file'
 echo $this->Form->input('Profile.id',
     array('type' =>'hidden', 'value' => $data['Profile']['id']));
 echo $this->Form->input('Profile.isi',
-    array('type' =>'textarea', 'value' => $data['Profile']['isi']));
+    array('type' =>'text', 'value' => $data['Profile']['isi']));
+echo $this->Form->input('Profile.latar',
+    array('type' =>'text', 'value' => $data['Profile']['latar']));
 
 
 echo $this->Form->end('Simpan');
