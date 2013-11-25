@@ -15,7 +15,7 @@
                 array('controller'=>'gkis',
                     'action' => 'index_user')); ?>">Daftar Alamat GKI</a></dd>
         <dd ><a href="<?php echo $this->Html->url(
-                array('controller'=>'Galeries',
+                array('controller'=>'Albums',
                     'action' => 'index_user')); ?>">Galery</a></dd>
     </dl></h4>
 

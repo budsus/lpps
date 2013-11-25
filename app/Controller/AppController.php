@@ -33,40 +33,5 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller {
 
-  // public $components = array('DebugKit.Toolbar');
-    var $helpers = array('Facebook.Facebook');
-    //var $components = array('Twitter.Twitter');
-
-  /* public function beforeFilter(){
-        parent::beforeFilter();
-        if(($this->request->action!='index' && !$this->Session->check('user'))  ){
-
-            $this->Session->setFlash('Anda harus login sebagai admin!');
-            $this->redirect(array('controller'=>'Facilities','action'=>'index'));
-
-        }
-else{
-    $this->layout='facility';
-}
-    }*/
-    public function beforeFilter(){
-        if(!$this->Session->check('user')){
-
-            $this->layout='facility';
-        }
-    }
-    /*function beforeFilter() {
-        if ($this->action != 'login' &&
-            $this->action != 'logout'){
-            if (!$this->Session->check('user')) {
-                $this->redirect(array('controller'=>'Facilities','action'=>'indexUser'));
-            } else {
-                $ouser = $this->Session->read('user');
-                if ($ouser['User']['Username'] != 'admin'){
-                    $this->redirect(array('controller'=>'main'));
-                }
-            }
-        }
-    }*/
 
 }
