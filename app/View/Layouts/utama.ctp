@@ -17,7 +17,7 @@ if ($nmcontroller == 'books' || $nmcontroller == 'Books' ||$nmcontroller == 'Buy
     $bookactive = 0;
     $activityactive=0;
     $profileactive=0;
-} else if ($nmcontroller == 'Activities' || $nmcontroller == 'activities'|| $nmcontroller == 'Participants') {
+} else if ($nmcontroller == 'Activities' || $nmcontroller == 'activities'|| $nmcontroller == 'Participants' || $nmcontroller == 'participants') {
     $activityactive = 1;
     $facilityactive = 0;
     $bookactive = 0;

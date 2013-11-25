@@ -30,7 +30,7 @@ class ActivitiesController extends AppController{
     }
 
     public function add(){
-        $this->layout='facility';
+        $this->layout='utama';
         $this->set('judul', 'Tambah Kegiatan Baru');
         if($this->request->is('post')){
             $this->Activity->create();
