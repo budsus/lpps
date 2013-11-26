@@ -64,6 +64,9 @@ if ($nmcontroller == 'books' || $nmcontroller == 'Books' ||$nmcontroller == 'Buy
             font-size: 2em;
         }
 
+        #ActivityDeadlineMonth, #ActivityDeadlineDay, #ActivityDeadlineYear,#ActivityDeadlineHour,#ActivityDeadlineMin,#ActivityDeadlineMeridian{
+            width: 15%;
+        }
 
         #EventStartMonth, #EventStartDay, #EventStartYear,#EventStartHour,#EventStartMin,#EventStartMeridian{
             width: 15%;
