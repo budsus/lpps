@@ -5,19 +5,19 @@
 $nmcontroller = $this->params['controller'];
 $bookactive = "";
 $facilityactive = "";
-$profileactive = "";
 $activityactive = "";
-if ($nmcontroller == 'books' || $nmcontroller == 'Books' ||$nmcontroller == 'Buys' ||$nmcontroller == 'buys'|| $nmcontroller == 'Bulletins' || $nmcontroller == 'Materials'|| $nmcontroller == 'bulletins' ) {
+$profileactive = "";
+if ($nmcontroller == 'books' || $nmcontroller == 'Books' ||$nmcontroller == 'Buys' ||$nmcontroller == 'buys'|| $nmcontroller == 'Bulletins' || $nmcontroller == 'Materials'|| $nmcontroller == 'bulletins'||$nmcontroller == 'Buybulletins' ||$nmcontroller == 'buybulletins'   ) {
     $bookactive = 1;
     $facilityactive = 0;
     $activityactive=0;
     $profileactive=0;
-} else if ($nmcontroller == 'Facilities' ||$nmcontroller == 'facilities' ) {
+} else if ($nmcontroller == 'Facilities' || $nmcontroller == 'facilities'|| $nmcontroller=='events' || $nmcontroller =='Events') {
     $facilityactive = 1;
     $bookactive = 0;
     $activityactive=0;
     $profileactive=0;
-} else if ($nmcontroller == 'Activities' || $nmcontroller == 'activities'|| $nmcontroller == 'Participants') {
+} else if ($nmcontroller == 'Activities' || $nmcontroller == 'activities'|| $nmcontroller == 'Participants' || $nmcontroller == 'participants') {
     $activityactive = 1;
     $facilityactive = 0;
     $bookactive = 0;
@@ -26,7 +26,7 @@ if ($nmcontroller == 'books' || $nmcontroller == 'Books' ||$nmcontroller == 'Buy
     $profileactive=1;
     $facilityactive = 0;
     $bookactive = 0;
-    $activityactive=0;
+    $activityactive = 0;
 }
 ?>
 
@@ -100,9 +100,9 @@ else if($activityactive==1)
     echo $this->element('sidebarActivities');
 else if($facilityactive==1)
     echo $this->element('sidebarFacilities');
-else
-    echo $this->element('sidebarProfil');
-
+else{
+    echo $this->element('sidebarkukuh');
+}
 ?>
 
 <?php echo $this->element('footer'); ?>

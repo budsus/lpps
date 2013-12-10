@@ -3,7 +3,6 @@ class MaterialsController extends AppController{
 	var $name = "Materials";
     public $layout = "utama";
 	public $uses= 'Material';
-    var $components = array('Session');
 	var $paginate = array(
                         'limit' => 25,
                         'order' => array(
@@ -61,7 +60,7 @@ class MaterialsController extends AppController{
     function simpan() {
         if (!empty($this->data)) {
             if ($this->Material->save($this->data)){
-                $this->Session->setFlash('Ubah detail material berhasil');
+                $this->Session->setFlash('Ubah detail material berhasil', 'default', array('class' => 'success'));
             }
             $this->redirect(array('action'=>'index'));
         }
@@ -79,8 +78,37 @@ class MaterialsController extends AppController{
             'download' => true,
             'path' => APP. 'webroot/files/material/judul/'.$file['Material']['materipembinaan_dir'].DS
             );
-  //pr($params[path]);
-$this->set($params);
+        $this->set($params);
 
+    }
+
+    function lihatadvennatal($id = null) {
+        $this->set('judul','Detail Material');
+        
+
+        $data1 = $this->paginate('Material');
+        $this->set('data', $data1);
+
+    }
+    function lihatpentakosta($id = null) {
+        $this->set('judul','Detail Material');
+        
+
+        $data = $this->paginate('Material');
+        $this->set('data', $data);
+    }
+    function lihatpaskah($id = null) {
+       $this->set('judul','Detail Material');
+        
+
+        $data = $this->paginate('Material');
+        $this->set('data', $data);
+    }
+    function lihatbulankeluarga($id = null) {
+        $this->set('judul','Detail Material');
+        
+
+        $data = $this->paginate('Material');
+        $this->set('data', $data);
     }
 }

@@ -15,13 +15,38 @@ class FacilitiesController extends AppController{
         }}
     public function index(){
 
-
+        //App::uses('Lib', 'arc2/ARC2.php');
         $data = $this->paginate('Facility');
         $this->set('data', $data);
         $this->set('judul', 'Manajemen fasilitas');
+        $url = 'http://www.w3.org/People/Connolly/';
+       // $this->layout=null;
+        /*$config = array('auto_extract' => 0);
+        $parser = ARC2::getSemHTMLParser();
+        $parser->parse( 'http://www.w3.org/2010/02/rdfa/sources/rdfa-primer/alice-example.html');
+
+        $parser->extractRDF('rdfa');
+
+        $triples = $parser->getTriples();
+        //pr($triples);
+        $rdfxml = $parser->toRDFXML($triples);
+        $this->set('rdf',$triples);*/
+
     }
 
+    function RDFA(){
+        $this->layout=null;
+        $config = array('auto_extract' => 0);
+        $parser = ARC2::getSemHTMLParser();
+        $parser->parse( 'http://rdfa.info/');
 
+        $parser->extractRDF('rdfa');
+
+        $triples = $parser->getTriples();
+        pr($triples);
+        $rdfxml = $parser->toRDFXML($triples);
+        $this->set('rdf',$rdfxml);
+    }
 
 
     public function tambah(){
@@ -40,7 +65,9 @@ class FacilitiesController extends AppController{
           // debug($this->Facility->saveAssociated($this->request->data));
           // pr(var_dump($this->Facility->invalidFields()));
             if($this->Facility->saveAssociated($this->request->data))
-            $this->Session->setFlash("Penambahan fasilitas berhasil!");
+            {  $this->Session->setFlash("Penambahan fasilitas berhasil!");
+                $this->redirect(array('controller'=>'facilities', 'action'=>'index'));}
+
        // }
             else{
                 $this->Session->setFlash("Penambahan fasilitas gagal!");
@@ -92,7 +119,7 @@ class FacilitiesController extends AppController{
     public function pesan($id=null){
         App::uses('CakeTime', 'Utility');
         // pr($id);
-        $this->layout='facility';
+        //$this->layout='facility';
         $data = $this->Facility->findById($id);
         $this->set('data', $data);
         $acara=$this->Event->find('all',array('conditions'=>array('fasilitas_id'=>$id)));
@@ -136,7 +163,7 @@ class FacilitiesController extends AppController{
                             )))){
                             $this->Event->saveAssociated($this->request->data);
                             $this->Session->setFlash('Pemesanan Fasilitas berhasil');
-
+                            break;
                         }
                         else{
                             $this->Session->setFlash('Fasilitas pada jam tersebut sudah terpesan');

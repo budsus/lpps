@@ -11,6 +11,8 @@
 echo $this->Form->create('Gki', array('action' => 'simpan', 'type' => 'file'));
 echo $this->Form->input('Gki.id',
     array('type' =>'hidden', 'value' => $data['Gki']['id']));
+echo $this->Form->input('Gki.nama',
+    array('type' =>'text', 'value' => $data['Gki']['nama']));
 echo $this->Form->input('Gki.alamat',
     array('type' =>'text', 'value' => $data['Gki']['alamat']));
 echo $this->Form->input('Gki.email',

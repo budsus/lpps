@@ -1,6 +1,6 @@
 <h2>Tambah Pengurus</h2>
 
-<form id="StaffAddForm" method="post" action="/KP/Penguruses/tambah" class="custom">
+<form id="StaffAddForm" method="post" action="tambah" class="custom">
 
     <div class="large-4 columns">
         <label for="nama">Nama</label>

@@ -1,6 +1,6 @@
 <h2>Tambah Staff</h2>
 
-<form id="StaffAddForm" method="post" action="/KP/Staffs/tambah" class="custom">
+<form id="StaffAddForm" method="post" action="tambah" class="custom">
 
         <div class="large-4 columns">
             <label for="nama">Name</label>

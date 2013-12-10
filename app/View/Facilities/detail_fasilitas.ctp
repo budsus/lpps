@@ -26,6 +26,10 @@
                     <p><?php echo $fasilitas['Facility']['keterangan']; ?></p>
                     <h5>Biaya Sewa :</h5>
                     <p><?php echo $fasilitas['Facility']['biaya']; ?></p>
+
+                        <h5>Jumlah :</h5>
+                        <p><?php echo $fasilitas['Facility']['jumlah']; ?></p>
+
                     <a href="<?php echo $this->Html->url(array('controller'=>'Facilities','action'=>'pesan', $fasilitas['Facility']['id'])); ?>">
                         <button class="btn btn-primary" type="button">Pesan Fasilitas</button>
                        </a>
@@ -67,6 +71,8 @@
                         <p><?php echo $fasilitas['Facility']['keterangan']; ?></p>
                         <h5>Biaya Sewa :</h5>
                         <p><?php echo $fasilitas['Facility']['biaya']; ?></p>
+
+
                         <a href="<?php echo $this->Html->url(array('controller'=>'Facilities','action'=>'pesan', $fasilitas['Facility']['id'])); ?>">
                             <button class="btn btn-primary" type="button">Pesan Fasilitas</button>
                         </a>

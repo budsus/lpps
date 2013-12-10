@@ -11,6 +11,8 @@
 echo $this->Form->create('Gkj', array('action' => 'simpan', 'type' => 'file'));
 echo $this->Form->input('Gkj.id',
     array('type' =>'hidden', 'value' => $data['Gkj']['id']));
+echo $this->Form->input('Gkj.nama',
+    array('type' =>'text', 'value' => $data['Gkj']['nama']));
 echo $this->Form->input('Gkj.alamat',
     array('type' =>'text', 'value' => $data['Gkj']['alamat']));
 echo $this->Form->input('Gkj.telp',

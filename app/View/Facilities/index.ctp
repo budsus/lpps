@@ -1,6 +1,6 @@
 <?php echo $this->Session->flash(); if($this->Session->check('user')) { ?>
 
-<h2>Daftar Fasilitas</h2>
+<h2 property="title">Daftar Fasilitas</h2>
 <p>&nbsp;</p>
 <table class="table table-hover">
     <thead>
@@ -13,7 +13,7 @@
         <th>Nama fasilitas</th>
         <th>Keterangan</th>
         <th>Biaya</th>
-
+        <th>Jumlah</th>
     </tr>
     </thead>
     <?php
@@ -23,6 +23,8 @@
         <tr><td colspan="4">Belum ada data Fasilitas</td></tr>
     <?php
     } else {
+
+
         // jika sudah ada data akun user
         foreach($data as $u):
             $nomorid=$u['Facility']['id'];
@@ -65,7 +67,7 @@
                 <td style="width:150px;"><?php echo $u['Facility']['nama']; ?></td>
                 <td style="width:250px;"><?php echo $u['Facility']['keterangan']; ?></td>
                 <td style="width:100px;"><?php echo $u['Facility']['biaya']; ?></td>
-
+                <td style="width:100px;"><?php echo $u['Facility']['jumlah']; ?></td>
             </tr>
         <?php
         endforeach;
@@ -75,8 +77,8 @@
 
 <?php } else { ?>
 
-
-
+    <div class="large-12 columns" >
+        <table>
         <?php
 
         foreach($data as $u):
@@ -92,23 +94,22 @@
                 ?>
 
 
-                <div class="large-4 columns">
-
+                <div class="large-4 small-6 columns">
+                    <img class='gambardepan' src="<?php echo $path;?>">
                     <h4> <a href="<?php echo $this->Html->url(
                             array('controller' => 'Facilities',
                                 'action'=>'detailFasilitas',
                                 $nomorid)); ?>">
                             <?php echo $u['Facility']['nama']; ?>
                         </a></h4>
-                    <img class='gambardepan' src="<?php echo $path;?>">
-                    <p> <?php echo $u['Facility']['keterangan']; ?></p>
+                    <p property="schema:summary"> <?php echo $u['Facility']['keterangan']; ?></p>
                 </div>
             <?php }
             else {
 
                 ?>
 
-                <div class="large-4 columns">
+                <div class="large-4 small-6 columns">
 
                     <h4> <a href="<?php echo $this->Html->url(
                             array('controller' => 'Facilities',
@@ -123,9 +124,16 @@
 
         ?>
 
+        </table>
+<?php /*foreach($rdf as $data):
+        if($data['o_type']=="literal"){
+           // pr($data) ;
+        }
 
 
+        endforeach;*/?>
 
+</div>
 
 
 

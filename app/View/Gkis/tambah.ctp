@@ -1,6 +1,6 @@
 <h2>Tambah Alamat</h2>
 
-<form id="StaffAddForm" method="post" action="/KP/Gkis/tambah" class="custom">
+<form id="StaffAddForm" method="post" action="tambah" class="custom">
 
     <div class="large-4 columns">
         <label for="nama">Gereja</label>

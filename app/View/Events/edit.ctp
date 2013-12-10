@@ -15,8 +15,8 @@
     <div class="actions">
         <ul class="large icon-grid">
 
-            <li><a href="/lpps2/events" class="foundicon-left-arrow"></a></li>
-            <li><a href="/lpps2/FullCalendar" class="foundicon-calendar"></a></li>
+            <li><a href="/lppsBackup/events" class="foundicon-left-arrow"></a></li>
+            <li><a href="/lppsBackup/FullCalendar" class="foundicon-calendar"></a></li>
         </ul>
     </div>
 <?php echo $this->Form->create('Event',array('action' => 'simpan'));?>

@@ -33,7 +33,19 @@ class  BuysController extends AppController {
         //$posts = $this->paginate(); 
 
     }
-
+    function ubah($id = null) {
+        $this->set('judul', 'Ubah Status Pembelian');
+        if ($id != null) {
+            $datauser = $this->Buy->find('first', array(
+                'conditions' => array(
+                    'Buy.id' => $id
+                )
+            ));
+            $this->set('data', $datauser);
+        } else {
+            $this->redirect(array('controller'=>'Buys', 'action'=>'index'));
+        }
+    }
     function beli($id = null){
 
         $data = $this->Buy->Book->findById($id);
@@ -70,6 +82,16 @@ class  BuysController extends AppController {
             $this->redirect(array('controller'=>'Buys', 'action'=>'index'));
         }
        
+    }
+
+    function simpan() {
+        if (!empty($this->data)) {
+            if ($this->Buy->save($this->data)){
+                $this->Session->setFlash('Ubah status pembelian berhasil', 'default', array('class' => 'success'));
+            }
+            $this->redirect(array('action'=>'index'));
+        }
+        $this->redirect(array('controller'=>'buys', 'action'=>'index'));
     }
 }
 ?>

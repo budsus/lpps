@@ -3,7 +3,9 @@
 class Participant extends AppModel{
 
     public $belongsTo = array(
-        'Activity'
+        'Activity' => array(
+            'counterCache' => true,
+        )
     );
 
     public $validate = array(

@@ -12,10 +12,9 @@ echo $this->Form->input('Activity.id',
 echo $this->Form->input('Activity.nama_kegiatan',
     array('type' =>'text',
         'value' => $data['Activity']['nama_kegiatan']));
-        //,'readonly'=> 'readonly'));
-echo $this->Form->input('Activity.penyelenggaraan',
+echo $this->Form->input('Activity.tgl_pelaksanaan',
     array('type' =>'text',
-        'value' => $data['Activity']['penyelenggaraan']));
+        'value' => $data['Activity']['tgl_pelaksanaan']));
 echo $this->Form->input('Activity.deskripsi_singkat',
     array('type' =>'text',
         'value' => $data['Activity']['deskripsi_singkat']));
@@ -40,5 +39,13 @@ echo $this->Form->input('Activity.penanggung_jawab',
 echo $this->Form->input('Activity.biaya_pendaftaran',
     array('type' =>'text',
         'value' => $data['Activity']['biaya_pendaftaran']));
+echo $this->Form->input('Activity.deadline',
+    array('type' =>'datetime',
+        'value' => $data['Activity']['deadline'],
+        'label' => 'Tanggal Pendaftaran Terakhir'));
+echo $this->Form->input('Activity.max_peserta',
+    array('type' =>'text',
+        'value' => $data['Activity']['max_peserta'],
+        'label' => 'Jumlah Maksimal Peserta'));
 echo $this->Form->end('Save');
 ?>

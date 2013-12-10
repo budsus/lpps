@@ -2,22 +2,26 @@
 
 class ActivitiesController extends AppController{
 
-   // var $components = array('Twitter.Twitter');
-    var $components = array('Session');
+    var $components = array('Session','Paginator');
     public $layout = "utama";
+    var $paginate = array(
+        'limit' => 10
+    );
     public function beforeFilter(){
         if(!$this->Session->check('user')){
 
             $this->layout='facility';
         }}
-    public function index(){
 
+    public function index(){
         $activities = $this->Activity->find('all');
+        $activities = $this->paginate('Activity');
         //pr($activities);
-$this->set('judul','Daftar Fasiltias');
+        $this->set('judul', 'Informasi Kegiatan LPPS');
         $this->set('activities',$activities);
     }
 
+    //tidak terpakai
     public function index_user(){
         $activities = $this->Activity->find('all');
         //pr($activities);
@@ -26,56 +30,16 @@ $this->set('judul','Daftar Fasiltias');
     }
 
     public function add(){
-
-
-            $this->layout='facility';
-
+        $this->layout='utama';
+        $this->set('judul', 'Tambah Kegiatan Baru');
         if($this->request->is('post')){
-            $this->Activity->save($this->request->data);
-
-            /*$oauth_token = ['82333236-KJWuWjpuZCtIzWwdqxqfGx0oKMUH4UlUbrpuhlKvY'];
-            $oauth_token_secret = ['kyc351mvGgNVK3Jd8iCeIBrScbLVmrL5CZtCuDCrd8'];
-            $this->Activity->load('Twitter.Twitter', array(
-                'oauthToken' => $oauth_token,
-                'oauthTokenSecret' => $oauth_token_secret,
-            ));*/
-            $this->Twitter->updateStatus('test: tweet via CakePHP');
-
-
-            /*if($this->Facebook->share('http://www.example.com/url_to_share'))
-            {
-                pr('success');
+            $this->Activity->create();
+            if($this->Activity->save($this->request->data)){
+                $this->Session->setFlash("Penambahan kegiatan baru berhasil!");
             }
-            else{pr('failed');}*/
-
-            ?>
-            <script type="text/javascript">
-                FB.getLoginStatus(function(response) {
-                    if (response.status === 'connected') {
-                        FB.api('/me/feed', 'post', { message: body }, function(response) {
-                            if (!response || response.error) {
-                                document.write("<p>success</p>");
-                            }
-                            else{
-                                document.write("<p>fail</p>");
-                            }
-                        });
-                    }
-                });</script>
-
-            <?php $this->redirect('/activities');
+            $this->redirect('/activities');
         }
     }
-
-    /*public function afterSave($created) {
-        $oauth_token = ['82333236-KJWuWjpuZCtIzWwdqxqfGx0oKMUH4UlUbrpuhlKvY'];
-        $oauth_token_secret = ['kyc351mvGgNVK3Jd8iCeIBrScbLVmrL5CZtCuDCrd8'];
-        $this->Behaviors->load('Twitter.Twitter', array(
-            'oauthToken' => $oauth_token,
-            'oauthTokenSecret' => $oauth_token_secret,
-        ));
-        $this->updateStatus('Some message you want to tweet');
-    }*/
 
     function edit($id = null) {
         $this->set('judul', 'Ubah Detail Kegiatan');
@@ -116,10 +80,8 @@ $this->set('judul','Daftar Fasiltias');
 
     function delete($id = null) {
         if ($id != null) {
-            if ($this->Activity->delete($id)) {
-                pr($id);
-                h($id);
-                //$this->Session->setFlash('The post with id: %s has been deleted.', h($id));
+            if ($this->Activity->delete($id,true)) {
+                $this->Session->setFlash('Data kegiatan telah dihapus.');
                 $this->redirect(array('action' => 'index'));
             } else {
                 $this->Session->setFlash("Data tidak dapat dihapus.");
@@ -146,22 +108,6 @@ $this->set('judul','Daftar Fasiltias');
         pr($params['path']);
         $this->set($params);
     }
-
-
-    function connect() {
-        $this->Twitter->setupApp('YOUR_CONSUMER_KEY', 'YOUR_CONSUMER_SECRET');
-        $this->Twitter->connectApp('YOUR_CALLBAK_URL');
-    }
-
-    /*public function afterSave($created) {
-        $oauth_token = [either a session or from where the token is saved in db];
-        $oauth_token_secret = [either a session or from where the token is saved in db];
-        $this->Behaviors->load('Twitter.Twitter', array(
-            'oauthToken' => $oauth_token,
-            'oauthTokenSecret' => $oauth_token_secret,
-        ));
-    $this->updateStatus('Some message you want to tweet');
-}*/
 
 }
 

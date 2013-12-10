@@ -27,10 +27,10 @@
                         'action' => 'index')); ?>">Bulletin</a></li>
             <li><a href="<?php echo $this->Html->url(
                     array('controller'=>'Buys',
-                        'action' => 'index')); ?>">Daftar pembeli Buku</a></li>
+                        'action' => 'index')); ?>">Daftar pembeli</a></li>
             <li><a href="<?php echo $this->Html->url(
                     array('controller'=>'Buybulletins',
-                        'action' => 'index')); ?>">Daftar pembeli Buletin</a></li>
+                        'action' => 'index')); ?>">Daftar pembeli Bulletin</a></li>
 
 
 

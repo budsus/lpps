@@ -10,6 +10,7 @@
 			<th>Judul</th>
 			<th>No. Telp</th>
 			<th>Keterangan Tambahan</th>
+            <th>Status Pembelian</th>
 			<th>Action</th>
 
 		</tr>
@@ -28,6 +29,11 @@
 	<td><?php echo $b['Book']['judul']; ?></td>
 	<td><?php echo $b['Buy']['notelp']; ?></td>
 	<td><?php echo $b['Buy']['keterangantambahan']; ?></td>
+            <td><?php echo $b['Buy']['statuspembelian']; ?></td>
+            <td class='button secondary'> <a href="<?php echo $this->Html->url(
+                    array('controller' => 'Buys', 'action'=>'ubah', $b['Buy']['id'])); ?>" ;">
+                    Ubah Status</a></td>
+
 	<td class='button secondary'> <a href="<?php echo $this->Html->url(
 									array('controller' => 'buys', 'action'=>'hapus', $b['Buy']['id'])); ?>" onclick="return confirm('Yakin untuk dihapus?');">
 						Hapus</a></td>

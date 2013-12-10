@@ -16,18 +16,9 @@
     <h5><button class='button secondary'><a href="<?php echo $this->Html->url(
                 array('controller'=>'books',
                     'action' => 'tambah')); ?>">Tambah Buku</a></h5>
-
-	<?php }
-	// jika tidak ada data user
-	if (sizeof($data) == 0) {
-	?>
-	<tr><td colspan="4">Belum ada data buku.</td></tr>
-	<?php 
-	} else {
-?>
         <thead>
         <tr>
-            <th></th>
+
             <th>Judul</th>
             <th>Cover</th>
             <th>Keterangan</th>
@@ -36,7 +27,14 @@
 
         </tr>
         </thead>
-        <?php
+	<?php }
+	// jika tidak ada data user
+	if (sizeof($data) == 0) {
+	?>
+	<tr><td colspan="4">Belum ada data buku.</td></tr>
+	<?php 
+	} else {
+
 		// jika sudah ada data akun user
 		foreach($data as $b):
 			$directory=$b['Book']['cover_dir'];

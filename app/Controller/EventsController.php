@@ -12,7 +12,7 @@
 
 class EventsController extends AppController {
     var $components = array('Session');
-    var $uses = array('Tempevent','Event');
+    var $uses = array('Tempevent','Event','Facility');
     var $helpers = array('Html', 'Form', 'Session', 'Js'=>array('Jquery'));
     public $layout = "utama";
 	var $name = 'Events';
@@ -36,6 +36,90 @@ class EventsController extends AppController {
 		}
 		$this->set('event', $this->Event->read(null, $id));
 	}
+
+    public function pesan(){
+        App::uses('CakeTime', 'Utility');
+        // pr($id);
+        //$this->layout='facility';
+        $this->set('fasilitas', $this->Event->Facility->find('list'));
+        //pr($acara);
+        $this->set('judul', 'Pesan Fasilitas');
+        if($this->request->is('post')){
+
+            if(!isset($this->Captcha))	{ //if Component was not loaded throug $components array()
+                $this->Captcha = $this->Components->load('Captcha'); //load it
+            }
+            $this->Event->create();
+            $this->Event->setCaptcha($this->Captcha->getVerCode()); //getting from component and passing to model to make proper validation check
+            $this->Event->set($this->request->data);
+
+            if($this->Event->validates())
+            { //as usual data save call'
+
+                //$this->Signup->save($this->request->data);//save or something
+                // validation passed, do something
+                $start=$this->Event->deconstruct('start',$this->request->data['Event']['start']);
+                $end=$this->Event->deconstruct('start',$this->request->data['Event']['end']);
+                $startdate=CakeTime::fromString($start);
+                $enddate=CakeTime::fromString($end);
+
+
+                // $start=$this->Time->format('Y m d h:i:A',$tes,null);
+                if(!empty($acara)){
+                    foreach($acara as $a):
+
+                        $timestart=CakeTime::fromString($a['Event']['start']);
+                        $timeend=CakeTime::fromString($a['Event']['end']);
+
+                        if(!$this->Event->find
+                            ('all',array
+                                ('conditions'=>array
+                                    (
+                                        $startdate.' BETWEEN '. $timestart.' AND '. $timeend
+
+                                    )
+                                )
+
+                            )&& !$this->Event->find
+                               ('all',array
+                                    ('conditions'=>array
+                                        (
+                                        $enddate.' BETWEEN '. $timestart.' AND '. $timeend
+
+                                        )
+                                    )
+                                )
+                          )
+                        {
+                            $this->Event->saveAssociated($this->request->data);
+                            $this->Session->setFlash('Pemesanan Fasilitas berhasil');
+                            break;
+
+                        }
+                        else{
+                            $this->Session->setFlash('Fasilitas pada jam tersebut sudah terpesan');
+                        }
+                    endforeach;
+                }
+                else{
+                    $this->Event->saveAssociated($this->request->data);
+                    $this->Session->setFlash('Pemesanan Fasilitas berhasil');
+                    }
+                //pr($start);
+
+
+
+                // $this->redirect('/Facilities/indexUser');
+            }	else
+                { //or
+                    $this->Session->setFlash('Pemesanan Fasilitas gagal');
+                //pr($this->Signup->validationErrors);
+                //something do something else
+                }
+            // $this->Session->setFlash('pemesanan fasilitas berhasil!');
+            //
+        }
+    }
 
 	function add() {
         $this->set('judul','Pemesanan Fasilitas');
@@ -117,6 +201,7 @@ class EventsController extends AppController {
             ));
             $this->set('fasilitas', $this->Event->Facility->find('list'));
             $this->data =$datauser ;
+            $this->Session->setFlash("Ubah data pemesanan berhasil");
         }
     }
 
@@ -157,6 +242,7 @@ class EventsController extends AppController {
         if ($this->Event->saveAssociated($this->data)){
             $this->Session->setFlash('Pemesanan berhasil', 'default', array('class' => 'success'));
         }
+        $this->Session->setFlash("Ubah data pemesanan berhasil");
         $this->redirect(array('action'=>'index'));
     }
     $this->redirect(array('controller'=>'main', 'action'=>'index'));
@@ -207,8 +293,11 @@ class EventsController extends AppController {
 				$allday = false;
 				$end = $event['Event']['end'];
 			}
-            if($event['Event']['status'] != 'Belum Verifikasi')
+            if($event['Event']['status'] == 'Belum verifikasi' || $event['Event']['status'] == 'Belum Verifikasi')
             {
+
+            }
+            else{
                 $data[] = array(
                     'id' => $event['Event']['id'],
                     'title'=>$event['Event']['nama_acara'],

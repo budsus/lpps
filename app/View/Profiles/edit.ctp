@@ -13,6 +13,8 @@ echo $this->Form->input('Profile.id',
     array('type' =>'hidden', 'value' => $data['Profile']['id']));
 echo $this->Form->input('Profile.isi',
     array('type' =>'textarea', 'value' => $data['Profile']['isi']));
+echo $this->Form->input('Profile.latar',
+    array('type' =>'textarea', 'value' => $data['Profile']['latar']));
 
 
 echo $this->Form->end('Simpan');

@@ -25,7 +25,7 @@
         echo $this->Form->input('Client.telepon');
         echo $this->Form->input('allday',array('type'=>'hidden','label'=>'sepanjang hari','value'=>'0'));
         echo $this->Form->input('details',array('label'=>'detail acara'));
-
+        echo $this->Form->input('jumlah',array('label'=>'jumlah fasilitas'));
         echo $this->Form->input('start',array( 'label' => 'Waktu Mulai'
         , 'dateFormat' => 'DMY h:i:s'));
         echo $this->Form->input('end',array( 'label' => 'Waktu Berakhir'

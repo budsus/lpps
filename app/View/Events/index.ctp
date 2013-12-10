@@ -9,14 +9,18 @@
  * Licensed under MIT
  * http://www.opensource.org/licenses/mit-license.php
  */
+echo $this->Session->flash();
 ?>
 <div class="events index">
 
 	<h3>Daftar Acara</h3>
+    <a href="<?php echo $this->Html->url(array('controller'=>'Events','action'=>'pesan')); ?>">
+        <button class="btn btn-primary" type="button">Pesan Fasilitas</button>
+    </a>
     <div class="actions">
         <ul class="large icon-grid">
 
-            <li><a href="/lpps/FullCalendar" class="foundicon-calendar"></a></li>
+            <li><a href="/lppsBackup/FullCalendar" class="foundicon-calendar"></a></li>
         </ul>
     </div>
 	<table cellpadding="0" cellspacing="0">

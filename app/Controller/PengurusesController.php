@@ -18,7 +18,7 @@ class PengurusesController extends AppController{
     }
 
     public function index_user(){
-        $this->layout = "utamauser";
+        //$this->layout = "utamauser";
         $data = $this->paginate('Pengurus');
         $this->set('data', $data);
         $this->set('judul', 'Profil Pengurus');

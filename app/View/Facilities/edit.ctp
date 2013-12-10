@@ -24,6 +24,9 @@ echo $this->Form->input('Facility.keterangan',
 echo $this->Form->input('Facility.biaya',
     array('type' =>'text',
         'value' => $data['Facility']['biaya']));
+echo $this->Form->input('Facility.jumlah',
+    array(
+        'value' => $data['Facility']['jumlah']));
 echo $this->Form->input('Facility.color',
     array('options' => array(
         'Blue' => 'Biru',

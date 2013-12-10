@@ -31,7 +31,7 @@ class BulletinsController extends AppController{
         if ($userid != null) {
             if ($this->Bulletin->delete($userid)) {
                 $this->Session->setFlash(
-                        "Data bulletin " . $userid + " telah terhapus", 
+                        "Data bulletin telah terhapus",
                         "default",
                         array("class"=>"success")
                     );

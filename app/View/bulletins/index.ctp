@@ -1,6 +1,12 @@
 <?php echo $this->Session->flash();?>
 <h6>Daftar Bulletin</h6>
 <p>&nbsp;</p>
+<?php if($this->Session->check('user')){?>
+<h5><button class='button secondary'><a href="<?php echo $this->Html->url(
+            array('controller'=>'bulletins',
+                'action' => 'tambah')); ?>">Tambah Buletin</a></h5>
+
+<?php }?>
 <table>
 	
 	<?php 
@@ -12,6 +18,8 @@
 	} else {
 		// jika sudah ada data akun user
         ?>
+
+        <?php if($this->Session->check('user')){?>
         <thead>
         <tr>
             <th>Judul</th>
@@ -22,6 +30,7 @@
             <th colspan="3">Action</th
         </tr>
         </thead>
+        <?php }?>
         <?php
 		foreach($data as $l):
 			$directory=$l['Bulletin']['cover_dir'];
@@ -33,7 +42,6 @@
 	?>
 
 
-	
 	<td><?php echo $l['Bulletin']['judul']; ?></td>
 	<td><img width="200px" height="200px" src="<?php echo $path; ?>"></td>
 	<td><?php echo $l['Bulletin']['keterangan']; ?></td>

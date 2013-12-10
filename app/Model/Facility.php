@@ -2,7 +2,7 @@
     class Facility extends AppModel{
         public $displayField='nama';
         public $hasMany=array(
-            'Galery'
+            'Galery',
         );
 
         var $validate = array(
@@ -24,6 +24,21 @@
                     'message' => 'Biaya harus terisi.'
                 )
 
+
+            ),
+            'jumlah' => array (
+                'notempty' => array(
+                    'rule' => 'notempty',
+                    'message' => 'Jumlah fasilitas harus terisi.'
+                ),
+                'minimal' => array(
+                    'rule' => 'naturalNumber',
+                    'message' => 'tidak boleh bernilai 0'
+                )
+                ,'angka' => array(
+                    'rule' => 'numeric',
+                    'message' => 'Harus berupa angka'
+                )
 
             )
         );

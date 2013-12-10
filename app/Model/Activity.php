@@ -3,7 +3,11 @@
 class Activity extends AppModel{
 
     public $hasMany = array(
-        'Participant'
+        'Participant' => array(
+            'className' => 'Participant',
+            'foreignKey' => 'activity_id',
+            'dependent' => true
+        )
     );
 
     public $validate = array(
@@ -18,11 +22,11 @@ class Activity extends AppModel{
         'deskripsi_singkat' => array(
             'rule' => 'notEmpty',
             'message' => 'Deskripsi singkat kegiatan harus diisi'
-            ),
+            )/*,
         'poster'=>array(
             'rule' => array('isValidMimeType', array('image/jpg', 'image/png','image/jpeg'), ),
             'message' => 'Format file harus berupa jpg atau png'
-        )
+        )*/
         );
     public $actsAs = array(
         'Upload.Upload' => array(

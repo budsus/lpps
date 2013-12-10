@@ -18,7 +18,7 @@ class GkisController extends AppController{
     }
 
     public function index_user(){
-        $this->layout = "utamauser";
+       // $this->layout = "utamauser";
         $data = $this->paginate('Gki');
         $this->set('data', $data);
         $this->set('judul', 'Daftar Alamat Gki');

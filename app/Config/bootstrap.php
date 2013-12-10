@@ -97,6 +97,7 @@ Configure::write('Dispatcher.filters', array(
  * Configures default file logging options
  */
 App::uses('CakeLog', 'Log');
+
 CakeLog::config('debug', array(
 	'engine' => 'File',
 	'types' => array('notice', 'info', 'debug'),
@@ -109,3 +110,4 @@ CakeLog::config('error', array(
 ));
 
 CakePlugin::loadAll();
+App::import('Lib', 'GRDDL');

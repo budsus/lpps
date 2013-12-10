@@ -11,6 +11,7 @@
 
     echo $this->Form->input('Facility.keterangan',array('label'=>'Keterangan','type'=>'textarea'));
     echo $this->Form->input('Facility.biaya',array('label'=>'Biaya'));
+    echo $this->Form->input('Facility.jumlah',array('label'=>'Jumlah Fasilitas'));
     echo $this->Form->input('Facility.color',array('label'=>'Biaya','type'=>'hidden','value'=>'Blue'));
     echo $this->Form->input('Galery.0.photo', array('type' => 'file'));
     echo $this->Form->input('Galery.0.photo_dir', array('type' => 'hidden'));

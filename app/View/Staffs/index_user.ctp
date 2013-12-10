@@ -1,22 +1,25 @@
 <h4><dl class="sub-nav">
         <dd ><a href="<?php echo $this->Html->url(
                 array('controller'=>'Profiles',
-                    'action' => 'index_user')); ?>">Profil</a></dd>
+                    'action' => 'index_user')); ?>">Profil  </a></dd>
         <dd class="active"><a href="<?php echo $this->Html->url(
                 array('controller'=>'Staffs',
-                    'action' => 'index_user')); ?>">Staff</a></dd>
+                    'action' => 'index_user')); ?>">Staff  </a></dd>
         <dd ><a href="<?php echo $this->Html->url(
                 array('controller'=>'Penguruses',
-                    'action' => 'index_user')); ?>">Pengurus</a></dd>
+                    'action' => 'index_user')); ?>">Pengurus  </a></dd>
         <dd ><a href="<?php echo $this->Html->url(
                 array('controller'=>'gkjs',
-                    'action' => 'index_user')); ?>">Daftar Alamat GKJ</a></dd>
+                    'action' => 'index_user')); ?>">Daftar Alamat GKJ  </a></dd>
         <dd ><a href="<?php echo $this->Html->url(
                 array('controller'=>'gkis',
-                    'action' => 'index_user')); ?>">Daftar Alamat GKI</a></dd>
+                    'action' => 'index_user')); ?>">Daftar Alamat GKI  </a></dd>
         <dd ><a href="<?php echo $this->Html->url(
-                array('controller'=>'Galeries',
-                    'action' => 'index_user')); ?>">Galery</a></dd>
+                array('controller'=>'Albums',
+                    'action' => 'index_user')); ?>">Galery  </a></dd>
+        <dd ><a href="<?php echo $this->Html->url(
+                array('controller'=>'Sahabats',
+                    'action' => 'index_user')); ?>">Sahabat LPPS  </a></dd>
     </dl></h4>
 
 
